@@ -1,6 +1,7 @@
 export default {
   ssr: process.env.MODE === "universal" ? true : false, //universal / spa
   target: process.env.TARGET ?? "server", // static / server
+  generate: { interval: 100 },
   server: {
     host: process.env.HOST || "0.0.0.0",
     port: process.env.PORT || 8080,
@@ -131,7 +132,7 @@ export default {
     defaults: { changefreq: "daily", priority: 1, lastmod: new Date() },
   },
 
-  // axios: { proxy: true, baseURL: process.env.API_URL },
+  axios: { proxy: true, baseURL: process.env.API_URL },
 
   auth: {
     strategies: {
