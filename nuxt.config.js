@@ -1,7 +1,6 @@
 export default {
   ssr: process.env.MODE === "universal" ? true : false, //universal / spa
   target: process.env.TARGET ?? "server", // static / server
-  generate: { interval: 1000 },
   server: {
     host: process.env.HOST || "0.0.0.0",
     port: process.env.PORT || 8080,
@@ -13,53 +12,24 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "google-adsense-account", content: "ca-pub-4198613489910321" },
       {
-        hid: "google-site-verification",
         name: "google-site-verification",
         content: "mfkpXWF7Li7GQaM0sHoymIiieIEARIXGCfddV5jtGnY",
       },
       {
-        hid: "description",
-        name: "description",
-        content:
-          "CholoZai: Transforming hotel management with an advanced booking system designed to simplify reservations, elevate guest satisfaction, and maximize operational efficiency. Discover seamless integration, intuitive interfaces, and powerful analytics to drive your hospitality business forward.",
-      },
-      {
-        hid: "og:title",
-        property: "og:title",
-        content: "CholoZai - Find Your Hotel at Affordable Price!",
-      },
-      {
-        hid: "og:description",
-        property: "og:description",
-        content:
-          "With CholoZai, find premium accommodations at affordable prices. Enjoy an exceptional stay without compromising on quality. Discover luxury within your budget.",
-      },
-      {
-        hid: "og:image",
         property: "og:image",
         content: `${process.env.BASE_URL}/og-image.webp`,
       },
+      { property: "og:site_name", content: `Cholozai` },
+      { property: "og:url", content: `https://cholozai.com` },
+      { property: "og:type", content: `website` },
       {
-        hid: "twitter:image",
         name: "twitter:image",
         content: `${process.env.BASE_URL}/og-image.webp`,
       },
-      {
-        hid: "twitter:card",
-        name: "twitter:card",
-        content: `summary_large_image`,
-      },
-      {
-        hid: "twitter:title",
-        name: "twitter:title",
-        content: `CholoZai - Find Your Hotel at Affordable Price!`,
-      },
-      {
-        hid: "twitter:description",
-        name: "twitter:description",
-        content: `With CholoZai, find premium accommodations at affordable prices. Enjoy an exceptional stay without compromising on quality. Discover luxury within your budget.`,
-      },
+      { name: "twitter:card", content: `summary_large_image` },
+      { name: "robots", content: `max-image-preview:large` },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.png" },
@@ -81,21 +51,24 @@ export default {
     script: [
       {
         type: "text/javascript",
-        src: `/gtag-head.js`,
+        src: `/js/gtag.js`,
         head: true,
-        defer: true,
-      },
-      {
-        async: true,
-        src: `https://www.googletagmanager.com/gtag/js?id=G-GDBWZXY0BG`,
-        body: true,
-        defer: true,
       },
       {
         type: "text/javascript",
-        src: `/gtag.js`,
-        body: true,
+        src: `/js/clearity.js`,
+        head: true,
+      },
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-GDBWZXY0BG",
+        async: true,
         defer: true,
+        body: true,
+      },
+      {
+        type: "text/javascript",
+        src: `/js/analytics.js`,
+        body: true,
       },
     ],
   },
@@ -125,6 +98,7 @@ export default {
     "@nuxtjs/tailwindcss",
     "@nuxtjs/dotenv",
     "@/modules/generator",
+    "@nuxt/image",
   ],
 
   modules: [
@@ -132,10 +106,11 @@ export default {
     "@nuxtjs/auth-next",
     "nuxt-svg-loader",
     "@nuxtjs/sitemap",
-    "@nuxt/image",
   ],
 
   image: {
+    provider: "static",
+    staticFilename: "images/[name][ext]",
     domains: ["utfs.io", "lh3.googleusercontent.com"],
     screens: {
       xs: 320,
@@ -150,12 +125,13 @@ export default {
 
   sitemap: {
     hostname: "https://cholozai.com",
+    path: "/sitemap.xml",
     gzip: true,
-    exclude: [],
+    exclude: ["/dashboard/**"],
     defaults: { changefreq: "daily", priority: 1, lastmod: new Date() },
   },
 
-  // axios: { proxy: true, baseURL: process.env.API_URL },
+  axios: { proxy: true, baseURL: process.env.API_URL },
 
   auth: {
     strategies: {
@@ -192,7 +168,7 @@ export default {
     },
   },
 
-  router: { middleware: ["auth"] },
+  router: { middleware: ["auth", "errorHandler"] },
 
   build: {
     analyze: !!process.env.ANALYZE,
