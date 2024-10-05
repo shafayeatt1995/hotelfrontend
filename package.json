@@ -5,7 +5,6 @@
   "scripts": {
     "ana": "ANALYZE=true nuxt build",
     "dev": "nuxt",
-    "vercel-build": "nuxt build",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
