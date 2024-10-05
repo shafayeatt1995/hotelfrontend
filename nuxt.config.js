@@ -6,6 +6,7 @@ export default {
     host: process.env.HOST || "0.0.0.0",
     port: process.env.PORT || 8080,
   },
+
   head: {
     htmlAttrs: { lang: "en" },
     title: process.env.APP_NAME || "CholoZai",
