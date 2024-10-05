@@ -5,6 +5,7 @@
   "scripts": {
     "ana": "ANALYZE=true nuxt build",
     "dev": "nuxt",
+    "vercel-build": "nuxt build",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
@@ -45,5 +46,7 @@
     "vue2-datepicker": "^3.11.1",
     "vue2-dropzone": "^3.6.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/vercel-builder": "^0.25.0"
+  }
 }
