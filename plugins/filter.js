@@ -16,6 +16,14 @@ Vue.filter("cleanDecimal", (value) =>
     .replace(/(\.0+|(?<=\.\d)0+)$/, "")
 );
 
+Vue.filter("cDate", (value, format = "en-GB") => {
+  return new Date(value).toLocaleDateString(format, {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+});
+
 Vue.filter("number", (value) =>
   value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 );

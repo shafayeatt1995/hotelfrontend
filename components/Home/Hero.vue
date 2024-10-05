@@ -1,6 +1,6 @@
 <template>
   <section class="h-dvh bg-cover bg-center relative">
-    <div class="w-screen h-dvh absolute top-0 left-0">
+    <div class="w-full h-dvh absolute top-0 left-0 right-0">
       <nuxt-img
         src="/images/bg/11.webp"
         alt="Hero bg"

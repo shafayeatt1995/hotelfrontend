@@ -31,7 +31,7 @@
             :to="{ name: 'search-hotels', query: { search: location.name } }"
             v-for="(location, key) in locations"
             :key="key"
-            class="relative overflow-hidden rounded-xl h-96 cursor-pointer block"
+            class="relative overflow-hidden rounded-xl cursor-pointer block aspect-[10/14]"
           >
             <div
               class="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-indigo-600 z-10"

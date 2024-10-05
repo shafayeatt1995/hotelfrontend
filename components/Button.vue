@@ -44,7 +44,7 @@ export default {
       } else if (this.variant === "red") {
         return "text-white  bg-rose-500 hover:bg-rose-600 focus:ring-rose-300 disabled:hover:bg-rose-300 disabled:bg-rose-300";
       } else if (this.variant === "transparent") {
-        return "text-gray-700 hover:text-gray-700 focus:ring-transparent disabled:hover:text-gray-400 disabled:text-gray-400 border";
+        return "text-gray-700 hover:text-indigo-700 focus:ring-transparent disabled:hover:text-gray-400 disabled:text-gray-400";
       } else if (this.variant === "blue") {
         return "text-white  bg-blue-500 hover:bg-blue-600 focus:ring-blue-300 disabled:hover:bg-blue-300 disabled:bg-blue-300";
       } else if (this.variant === "yellow") {

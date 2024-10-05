@@ -1,4 +1,5 @@
 require("dotenv").config();
+import axios from "axios";
 
 export const state = () => ({
   baseUrl: process.env.BASE_URL,
@@ -15,6 +16,8 @@ export const state = () => ({
   loadBeds: false,
   beds: [],
   searchData: { locations: [], properties: [] },
+  districts: [],
+  divisions: [],
 });
 
 export const mutations = {
@@ -48,6 +51,11 @@ export const mutations = {
   },
   SET_BEDS(state, payload) {
     state.beds = payload;
+  },
+  setNavbarData(state, data) {
+    const { districts, divisions } = data;
+    state.districts = districts.sort((a, b) => a.name.localeCompare(b.name));
+    state.divisions = divisions.sort((a, b) => a.name.localeCompare(b.name));
   },
 };
 
@@ -117,6 +125,17 @@ export const actions = {
       }
     }
   },
+  async nuxtServerInit({ dispatch }) {
+    await dispatch("fetchNavbarData");
+  },
+  async fetchNavbarData({ commit, state }) {
+    try {
+      const res = await axios.get(`${state.apiUrl}/api/fetch/navbar`);
+      commit("setNavbarData", res.data);
+    } catch (error) {
+      console.error("Failed to fetch navbar data:", error);
+    }
+  },
 };
 
 export const getters = {
@@ -147,6 +166,8 @@ export const getters = {
   facilities: (state) => state.facilities,
   beds: (state) => state.beds,
   searchData: (state) => state.searchData,
+  districts: (state) => state.districts,
+  divisions: (state) => state.divisions,
   // authUser: (state) => state.auth.user,
   // authLoggedIn: (state) => state.auth.loggedIn,
   // authStrategy: (state) => state.auth.strategy,
