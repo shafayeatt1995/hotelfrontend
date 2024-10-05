@@ -130,6 +130,8 @@ export async function refreshTokens() {
 }
 
 export async function initLottie(container, path) {
+  if (typeof window === "undefined") return;
+
   if (
     loadedAnimations.has(container) &&
     loadedAnimations.get(container) === path
