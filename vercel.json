@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "buildCommand": "nuxt build",
-  "outputDirectory": ".nuxt",
-  "framework": "nuxt",
-  "functions": {
-    "api/index.js": {
-      "runtime": "nodejs20.x"
+  "builds": [
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder",
+      "config": {
+        "serverFiles": ["package.json", "nuxt.config.js"]
+      }
     }
-  },
+  ],
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/"
     }
-  ],
-  "ignoreCommand": "git diff --quiet HEAD^ HEAD ./"
+  ]
 }
