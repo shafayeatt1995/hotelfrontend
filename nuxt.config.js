@@ -131,7 +131,7 @@ export default {
     defaults: { changefreq: "daily", priority: 1, lastmod: new Date() },
   },
 
-  axios: { proxy: true, baseURL: process.env.API_URL },
+  // axios: { proxy: true, baseURL: process.env.API_URL },
 
   auth: {
     strategies: {
