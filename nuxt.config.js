@@ -1,7 +1,7 @@
 export default {
   ssr: process.env.MODE === "universal" ? true : false, //universal / spa
   target: process.env.TARGET ?? "server", // static / server
-  generate: { interval: 100 },
+  generate: { interval: 200 },
   server: {
     host: process.env.HOST || "0.0.0.0",
     port: process.env.PORT || 8080,
