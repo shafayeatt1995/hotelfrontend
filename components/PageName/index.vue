@@ -1,8 +1,8 @@
 <template>
   <div
-    class="bg-gradient-to-b from-indigo-300 to-indigo-500 py-16 md:py-28 -mt-[90px] mb-10 -mx-2 md:mx-0"
+    class="bg-gradient-to-b from-indigo-300 to-indigo-500 py-16 md:py-28 -mt-[90px] mb-10 -mx-2 md:mx-0 pt-10"
   >
-    <div class="mt-[81px]"></div>
+    <div class="mt-40"></div>
     <h1
       class="text-white text-center text-2xl md:text-5xl font-semibold capitalize"
     >
