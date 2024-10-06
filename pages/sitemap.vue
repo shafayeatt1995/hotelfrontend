@@ -45,7 +45,6 @@ export default {
     const title = `Sitemap | ${this.$pageTitle}`;
     const description =
       "Explore the complete sitemap of Cholozai, your go-to travel guide. Find all available tours, travel guides, and tips in one place to plan your next adventure effortlessly.";
-
     return {
       title,
       meta: meta({ title, description }),
