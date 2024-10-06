@@ -1,5 +1,4 @@
 <template>
-  <div class="bg-white dark:bg-gray-900 lg:py-24 py-20">
     <div class="container mx-auto py-10 px-4 md:px-10">
       <h1 class="text-3xl font-bold mb-2 text-gray-800 dark:text-white">
         Sitemap
@@ -31,7 +30,6 @@
         <p>Loading sitemap...</p>
       </div>
     </div>
-  </div>
 </template>
 
 <script>

@@ -187,6 +187,11 @@
     },
     {
       "permanent": true,
+      "source": "/blog/post/mir_masharraf_hossain_n",
+      "destination": "/location/mir-mosharraf-hossain-memorial"
+    },
+    {
+      "permanent": true,
       "source": "/blog/post/:slug*",
       "destination": "/location/:slug*"
     }

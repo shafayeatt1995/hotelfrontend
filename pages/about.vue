@@ -1,53 +1,51 @@
 <template>
-  <div class="bg-white dark:bg-gray-900 lg:py-24 py-20">
-    <div class="container mx-auto">
-      <div class="flex flex-col lg:flex-row justify-between gap-8">
-        <div class="w-full lg:w-1/2 flex flex-col justify-center">
-          <h1
-            class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4"
-          >
-            About Us - Cholozai.com: Your Ultimate Guide to Traveling Bangladesh
-          </h1>
-          <p
-            class="font-normal text-base leading-6 text-gray-600 dark:text-white"
-          >
-            Welcome to Cholozai.com! We're thrilled to have you here, and we'd
-            love to tell you a bit about who we are, what we do, and how we can
-            help make your travels in Bangladesh unforgettable. Whether you're a
-            seasoned traveler or planning your first adventure, Cholozai.com is
-            your go-to destination for all things related to Bangladesh tourism.
-          </p>
-        </div>
-        <div class="w-full lg:w-1/2 flex justify-center">
-          <nuxt-img
-            loading="lazy"
-            decoding="async"
-            class="w-auto max-h-[500px]"
-            src="/images/about.svg"
-            alt="cholozai"
-            title="cholozai"
-            format="webp"
-            height="500"
-          />
-        </div>
-      </div>
-      <div
-        v-for="(content, key) in contents"
-        :key="key"
-        class="mt-10 dark:text-white text-gray-800"
-      >
-        <h2 class="text-2xl lg:text-3xl font-semibold">{{ content.title }}</h2>
-        <p>
-          {{ content.body }}
-        </p>
-        <div
-          v-for="(sub, i) in content.subs"
-          :key="`sub-${i}`"
-          class="mt-5 md:pl-10 pl-5"
+  <div class="container mx-auto">
+    <div class="flex flex-col lg:flex-row justify-between gap-8">
+      <div class="w-full lg:w-1/2 flex flex-col justify-center">
+        <h1
+          class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4"
         >
-          <h3 class="text-xl lg:text-2xl font-semibold">{{ sub.title }}</h3>
-          <p>{{ sub.body }}</p>
-        </div>
+          About Us - Cholozai.com: Your Ultimate Guide to Traveling Bangladesh
+        </h1>
+        <p
+          class="font-normal text-base leading-6 text-gray-600 dark:text-white"
+        >
+          Welcome to Cholozai.com! We're thrilled to have you here, and we'd
+          love to tell you a bit about who we are, what we do, and how we can
+          help make your travels in Bangladesh unforgettable. Whether you're a
+          seasoned traveler or planning your first adventure, Cholozai.com is
+          your go-to destination for all things related to Bangladesh tourism.
+        </p>
+      </div>
+      <div class="w-full lg:w-1/2 flex justify-center">
+        <nuxt-img
+          loading="lazy"
+          decoding="async"
+          class="w-auto max-h-[500px]"
+          src="/images/about.svg"
+          alt="cholozai"
+          title="cholozai"
+          format="webp"
+          height="500"
+        />
+      </div>
+    </div>
+    <div
+      v-for="(content, key) in contents"
+      :key="key"
+      class="mt-10 dark:text-white text-gray-800"
+    >
+      <h2 class="text-2xl lg:text-3xl font-semibold">{{ content.title }}</h2>
+      <p>
+        {{ content.body }}
+      </p>
+      <div
+        v-for="(sub, i) in content.subs"
+        :key="`sub-${i}`"
+        class="mt-5 md:pl-10 pl-5"
+      >
+        <h3 class="text-xl lg:text-2xl font-semibold">{{ sub.title }}</h3>
+        <p>{{ sub.body }}</p>
       </div>
     </div>
   </div>
