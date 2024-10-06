@@ -1,7 +1,7 @@
 <template>
   <div class="fixed top-0 left-0 right-0 z-20">
     <div
-      class="w-full backdrop-blur-md bg-white/30 dark:bg-black/30 lg:h-20 h-16 absolute left-0 top-0 right-0 z-10 shadow-lg"
+      class="w-full backdrop-blur-md bg-white/30 dark:bg-black/70 lg:h-20 h-16 absolute left-0 top-0 right-0 z-10 shadow-lg"
     ></div>
     <div
       class="container mx-auto absolute top-0 left-0 right-0 z-20 lg:px-5 xl:px-0 px-2 lg:h-20 h-16"
@@ -117,13 +117,6 @@
               title="Tour guide page"
             >
               Tour Guide
-            </nuxt-link>
-            <nuxt-link
-              class="px-3 py-2 text-sm font-medium text-indigo-900 dark:text-white hover:text-indigo-700"
-              :to="{ name: 'location-page-page', params: { page: 1 } }"
-              title="location page"
-            >
-              Locations
             </nuxt-link>
             <div class="relative" v-if="$auth.loggedIn">
               <div

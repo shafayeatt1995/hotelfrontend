@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col w-full items-center">
-    <div class="p-3 mx-auto text-Gray-900 bg-gray-100 rounded-full">
+    <div class="p-3 mx-auto text-gray-800 bg-gray-100 rounded-full">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

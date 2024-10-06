@@ -1,5 +1,5 @@
 <template>
-  <div class="py-10 bg-gray-50">
+  <div class="py-10 bg-gray-50 dark:bg-gray-900">
     <div class="container relative mx-auto">
       <div class="my-8 px-2 md:px-0 grid lg:grid-cols-4 md:grid-cols-2 gap-6">
         <div

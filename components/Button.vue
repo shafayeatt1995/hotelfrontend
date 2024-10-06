@@ -34,9 +34,9 @@ export default {
       if (this.variant === "green") {
         return "text-white bg-green-500 hover:bg-green-600 focus:ring-green-300 disabled:hover:bg-green-300 disabled:bg-green-300";
       } else if (this.variant === "white") {
-        return "text-gray-900 border border-gray-200 hover:bg-gray-100 focus:ring-gray-300 disabled:hover:bg-gray-300 disabled:bg-gray-300";
+        return "text-gray-800 border border-gray-200 hover:bg-gray-100 focus:ring-gray-300 disabled:hover:bg-gray-300 disabled:bg-gray-300";
       } else if (this.variant === "gray") {
-        return "text-gray-900  bg-gray-500 hover:bg-gray-600 focus:ring-gray-300 disabled:hover:bg-gray-300 disabled:bg-gray-300";
+        return "text-gray-800  bg-gray-500 hover:bg-gray-600 focus:ring-gray-300 disabled:hover:bg-gray-300 disabled:bg-gray-300";
       } else if (this.variant === "lightGray") {
         return "text-gray-800  bg-gray-200 hover:bg-gray-300 focus:ring-gray-300 disabled:hover:bg-gray-300 disabled:bg-gray-300";
       } else if (this.variant === "pink") {
@@ -44,11 +44,11 @@ export default {
       } else if (this.variant === "red") {
         return "text-white  bg-rose-500 hover:bg-rose-600 focus:ring-rose-300 disabled:hover:bg-rose-300 disabled:bg-rose-300";
       } else if (this.variant === "transparent") {
-        return "text-gray-700 hover:text-indigo-700 focus:ring-transparent disabled:hover:text-gray-400 disabled:text-gray-400";
+        return "text-gray-700 dark:text-gray-300 hover:text-indigo-700 dark:hover:text-indigo-700 focus:ring-transparent disabled:hover:text-gray-400 disabled:text-gray-400";
       } else if (this.variant === "blue") {
         return "text-white  bg-blue-500 hover:bg-blue-600 focus:ring-blue-300 disabled:hover:bg-blue-300 disabled:bg-blue-300";
       } else if (this.variant === "yellow") {
-        return "text-gray-900  bg-yellow-500 hover:bg-yellow-600 focus:ring-yellow-300 disabled:hover:bg-yellow-300 disabled:bg-yellow-300";
+        return "text-gray-800  bg-yellow-500 hover:bg-yellow-600 focus:ring-yellow-300 disabled:hover:bg-yellow-300 disabled:bg-yellow-300";
       } else if (this.variant === "purple") {
         return "text-white  bg-purple-500 hover:bg-purple-600 focus:ring-purple-300 disabled:hover:bg-purple-300 disabled:bg-purple-300";
       } else if (this.variant === "indigo") {
@@ -56,9 +56,9 @@ export default {
       } else if (this.variant === "lightIndigo") {
         return "text-indigo-600 hover:text-white  bg-indigo-100 hover:bg-indigo-700 focus:ring-indigo-300 disabled:hover:bg-indigo-300 disabled:bg-indigo-300 disabled:hover:text-gray-300 disabled:text-gray-300";
       } else if (this.variant === "amber") {
-        return "text-gray-900  bg-amber-500 hover:bg-amber-600 focus:ring-amber-300 disabled:hover:bg-amber-300 disabled:bg-amber-300";
+        return "text-gray-800  bg-amber-500 hover:bg-amber-600 focus:ring-amber-300 disabled:hover:bg-amber-300 disabled:bg-amber-300";
       } else if (this.variant === "sky") {
-        return "text-gray-900  bg-sky-500 hover:bg-sky-600 focus:ring-sky-300 disabled:hover:bg-sky-300 disabled:bg-sky-300";
+        return "text-gray-800  bg-sky-500 hover:bg-sky-600 focus:ring-sky-300 disabled:hover:bg-sky-300 disabled:bg-sky-300";
       } else if (this.variant === "dark") {
         return "text-white bg-gray-900 hover:bg-gray-900 focus:ring-gray-900 disabled:hover:bg-gray-500 disabled:bg-gray-500 hover:shadow-gray-500 disabled:hover:shadow-transparent";
       } else if (this.variant === "black") {

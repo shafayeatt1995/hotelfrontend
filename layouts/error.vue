@@ -1,14 +1,16 @@
 <template>
-  <section class="bg-white">
+  <section class="bg-white dark:bg-gray-900">
     <div
       class="container min-h-screen px-6 mx-auto flex lg:items-center flex-col-reverse lg:flex-row justify-end -mt-24"
     >
-      <div class="wf-ull lg:w-1/3">
+      <div class="wf-ull lg:w-1/3 text-gr">
         <p class="text-sm font-medium text-indigo-600">404 error</p>
-        <h1 class="mt-3 text-2xl font-semibold text-gray-700 md:text-3xl">
+        <h1
+          class="mt-3 text-2xl font-semibold text-gray-700 dark:text-white md:text-3xl"
+        >
           Page not found
         </h1>
-        <p class="mt-4 text-gray-500">
+        <p class="mt-4 text-gray-500 dark:text-white">
           Sorry, the page you are looking for doesn't exist. Here are some
           helpful links:
         </p>

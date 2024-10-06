@@ -1,9 +1,7 @@
 <template>
   <div class="selection:bg-indigo-600 selection:text-white">
     <HomeNavbar />
-    <div class="lg:mt-24 mt-20"></div>
     <Nuxt />
-    <div class="py-4"></div>
     <Footer />
     <BackToTop />
     <LoginPopup />

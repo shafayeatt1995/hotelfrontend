@@ -1,5 +1,5 @@
 <template>
-  <div class="-mt-24">
+  <div class="">
     <HomeHero />
     <HomeSearch class="-mt-16" />
     <HomeDestination :locations="locations" />
@@ -19,12 +19,17 @@
 </template>
 
 <script>
+import { meta } from "@/utils";
 import axios from "axios";
+
 export default {
   name: "IndexPage",
   auth: false,
   head() {
-    return { title: `Home - ${this.$pageTitle}` };
+    return {
+      title: `All tours and travel tips and information - ${this.$pageTitle}`,
+      meta: meta(),
+    };
   },
   data() {
     return {

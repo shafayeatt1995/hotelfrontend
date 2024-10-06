@@ -1,150 +1,158 @@
 <template>
-  <div class="container relative z-1 mx-auto z-10">
-    <div class="grid px-2 md:px-0">
-      <form
-        class="md:p-6 p-2 bg-white rounded-xl shadow-lg"
-        @submit.prevent="submit"
-      >
-        <div class="registration-form text-dark text-start">
-          <div class="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-4">
-            <div class="relative">
-              <label class="form-label font-medium text-slate-900">
-                Search:
-              </label>
-              <input
-                type="text"
-                class="block w-full py-2 text-gray-700 bg-white border rounded-lg focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40 disabled:bg-gray-200 px-4"
-                placeholder="Search"
-                v-model="form.search"
-                @focus="show = 'destination'"
-                @blur="showFalse"
-              />
-              <div
-                class="absolute bg-white md:w-[500px] w-full shadow-xl border rounded-lg flex max-h-[450px] z-10 overflow-y-auto p-2 gap-3"
-                v-if="show === 'destination'"
-              >
-                <div class="flex-1">
-                  <p class="font-semibold">Top Destination</p>
-                  <div class="grid md:grid-cols-2 grid-cols-1 mt-2 gap-3">
-                    <div
-                      class="flex gap-3 cursor-pointer"
-                      v-for="(location, _) in locations"
-                      :key="`location-${_}`"
-                      @click="form.search = location.name"
-                    >
-                      <nuxt-img
-                        :src="location.image"
-                        :alt="location.name"
-                        width="96"
-                        height="96"
-                        format="webp"
-                        class="size-12 rounded-lg object-cover"
-                        loading="lazy"
-                        decode="async"
-                      />
-                      <div class="flex-1">
-                        <p class="font-semibold truncate max-w-44">
-                          {{ location.name }}
-                        </p>
-                        <p class="text-sm text-gray-700 truncate max-w-44">
-                          City
-                        </p>
+  <div class="bg-white dark:bg-gray-900">
+    <div class="container relative z-1 mx-auto z-10">
+      <div class="grid px-2 md:px-0">
+        <form
+          class="md:p-6 p-2 bg-white dark:bg-gray-800 rounded-xl shadow-lg"
+          @submit.prevent="submit"
+        >
+          <div class="registration-form text-dark text-start">
+            <div class="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-4">
+              <div class="relative">
+                <label
+                  class="form-label font-medium text-grey-900 dark:text-white"
+                >
+                  Search:
+                </label>
+                <input
+                  type="text"
+                  class="block w-full py-2 text-gray-700 bg-white border rounded-lg focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40 disabled:bg-gray-200 px-4"
+                  placeholder="Search"
+                  v-model="form.search"
+                  @focus="show = 'destination'"
+                  @blur="showFalse"
+                />
+                <div
+                  class="absolute bg-white md:w-[500px] w-full shadow-xl border rounded-lg flex max-h-[450px] z-10 overflow-y-auto p-2 gap-3"
+                  v-if="show === 'destination'"
+                >
+                  <div class="flex-1">
+                    <p class="font-semibold">Top Destination</p>
+                    <div class="grid md:grid-cols-2 grid-cols-1 mt-2 gap-3">
+                      <div
+                        class="flex gap-3 cursor-pointer"
+                        v-for="(location, _) in locations"
+                        :key="`location-${_}`"
+                        @click="form.search = location.name"
+                      >
+                        <nuxt-img
+                          :src="location.image"
+                          :alt="location.name"
+                          width="96"
+                          height="96"
+                          format="webp"
+                          class="size-12 rounded-lg object-cover"
+                          loading="lazy"
+                          decode="async"
+                        />
+                        <div class="flex-1">
+                          <p class="font-semibold truncate max-w-44">
+                            {{ location.name }}
+                          </p>
+                          <p class="text-sm text-gray-700 truncate max-w-44">
+                            City
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <label class="form-label font-medium text-slate-900">
-                Check in date:
-              </label>
-              <div class="relative">
-                <ClientOnly>
-                  <DatePicker
-                    v-model="form.checkIn"
-                    type="date"
-                    placeholder="Select check in date"
-                    prefix-class="xmx"
-                    :disabled-date="disabledCheckInDate"
-                    format="DD MMM,YYYY"
-                    :clearable="false"
-                  />
-                </ClientOnly>
-              </div>
-            </div>
-            <div>
-              <label class="form-label font-medium text-slate-900"
-                >Check out date:</label
-              >
-              <div class="relative">
-                <ClientOnly>
-                  <DatePicker
-                    v-model="form.checkOut"
-                    type="date"
-                    placeholder="Select check out date"
-                    prefix-class="xmx"
-                    :disabled-date="disabledCheckOutDate"
-                    format="DD MMM,YYYY"
-                    :clearable="false"
-                  />
-                </ClientOnly>
-              </div>
-            </div>
-            <div class="relative">
-              <label class="form-label font-medium text-slate-900"
-                >Guests & rooms:</label
-              >
-              <div
-                v-click-outside="
-                  () => {
-                    show === 'person' ? (show = '') : '';
-                  }
-                "
-              >
-                <input
-                  type="text"
-                  class="block w-full py-2 text-gray-700 bg-white border rounded-lg focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40 disabled:bg-gray-200 px-4"
-                  placeholder="Search"
-                  :value="guestAndRoom"
-                  @click="show = 'person'"
-                />
-                <div
-                  class="absolute bg-white min-w-60 w-full shadow-xl rounded-lg z-10 p-2 gap-3 divide-y divide-gray-200 border border-gray-200 right-0"
-                  v-if="show === 'person'"
+              <div>
+                <label
+                  class="form-label font-medium text-grey-900 dark:text-white"
                 >
-                  <div class="flex items-center justify-between flex-1 py-3">
-                    <div>
-                      <p class="font-bold text-gray-800">Adults</p>
-                      <p class="text-xs text-gray-700">Ages 13 or above</p>
+                  Check in date:
+                </label>
+                <div class="relative">
+                  <ClientOnly>
+                    <DatePicker
+                      v-model="form.checkIn"
+                      type="date"
+                      placeholder="Select check in date"
+                      prefix-class="xmx"
+                      :disabled-date="disabledCheckInDate"
+                      format="DD MMM,YYYY"
+                      :clearable="false"
+                    />
+                  </ClientOnly>
+                </div>
+              </div>
+              <div>
+                <label
+                  class="form-label font-medium text-grey-900 dark:text-white"
+                  >Check out date:</label
+                >
+                <div class="relative">
+                  <ClientOnly>
+                    <DatePicker
+                      v-model="form.checkOut"
+                      type="date"
+                      placeholder="Select check out date"
+                      prefix-class="xmx"
+                      :disabled-date="disabledCheckOutDate"
+                      format="DD MMM,YYYY"
+                      :clearable="false"
+                    />
+                  </ClientOnly>
+                </div>
+              </div>
+              <div class="relative">
+                <label
+                  class="form-label font-medium text-grey-900 dark:text-white"
+                  >Guests & rooms:</label
+                >
+                <div
+                  v-click-outside="
+                    () => {
+                      show === 'person' ? (show = '') : '';
+                    }
+                  "
+                >
+                  <input
+                    type="text"
+                    class="block w-full py-2 text-gray-700 bg-white border rounded-lg focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40 disabled:bg-gray-200 px-4"
+                    placeholder="Search"
+                    :value="guestAndRoom"
+                    @click="show = 'person'"
+                  />
+                  <div
+                    class="absolute bg-white min-w-60 w-full shadow-xl rounded-lg z-10 p-2 gap-3 divide-y divide-gray-200 border border-gray-200 right-0"
+                    v-if="show === 'person'"
+                  >
+                    <div class="flex items-center justify-between flex-1 py-3">
+                      <div>
+                        <p class="font-bold text-gray-800">Adults</p>
+                        <p class="text-xs text-gray-700">Ages 13 or above</p>
+                      </div>
+                      <Hstack v-model="form.adult" :min="1" />
                     </div>
-                    <Hstack v-model="form.adult" :min="1" />
-                  </div>
-                  <div class="flex items-center justify-between flex-1 py-1">
-                    <div>
-                      <p class="font-bold text-gray-800">Child</p>
-                      <p class="text-xs text-gray-700">Ages 13 below</p>
+                    <div class="flex items-center justify-between flex-1 py-1">
+                      <div>
+                        <p class="font-bold text-gray-800">Child</p>
+                        <p class="text-xs text-gray-700">Ages 13 below</p>
+                      </div>
+                      <Hstack v-model="form.child" />
                     </div>
-                    <Hstack v-model="form.child" />
-                  </div>
-                  <div class="flex items-center justify-between flex-1 py-1">
-                    <div>
-                      <p class="font-bold text-gray-800">Rooms</p>
-                      <p class="text-xs text-gray-700">Max room 5</p>
+                    <div class="flex items-center justify-between flex-1 py-1">
+                      <div>
+                        <p class="font-bold text-gray-800">Rooms</p>
+                        <p class="text-xs text-gray-700">Max room 5</p>
+                      </div>
+                      <Hstack v-model="form.room" :max="5" />
                     </div>
-                    <Hstack v-model="form.room" :max="5" />
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="lg:mt-6 mt-4 col-span-full lg:col-span-1">
-              <Button class="w-full" type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i> Search
-              </Button>
+              <div class="lg:mt-6 mt-4 col-span-full lg:col-span-1">
+                <Button class="w-full" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i> Search
+                </Button>
+              </div>
             </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </div>
 </template>
