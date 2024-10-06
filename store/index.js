@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const state = () => ({
   baseUrl: process.env.BASE_URL,
-  apiUrl: process.env.API_URL || "https://hotels-api.cholozai.com",
+  apiUrl: process.env.API_URL || "https://api.cholozai.com",
   windowWidth: 0,
   loadLocations: false,
   locations: [],

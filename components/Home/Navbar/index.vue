@@ -126,7 +126,7 @@
             >
               Tour Guide
             </nuxt-link>
-            <div class="relative" v-if="$auth.loggedIn">
+            <div class="relative" v-if="isLoggedIn">
               <div
                 class="size-10 cursor-pointer"
                 @click="popup = popup === 'profile' ? '' : 'profile'"
@@ -176,6 +176,7 @@ export default {
       showDivision: false,
       showDistrict: false,
       showMenu: false,
+      isLoggedIn: false,
     };
   },
   computed: {
@@ -190,6 +191,9 @@ export default {
       this.showDivision = false;
       this.showDistrict = false;
     },
+  },
+  mounted() {
+    this.isLoggedIn = this.$auth.loggedIn;
   },
 };
 </script>
