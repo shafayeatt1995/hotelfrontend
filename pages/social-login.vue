@@ -44,9 +44,12 @@ export default {
           if (socialLogin) {
             const { name, query, params } = JSON.parse(socialLogin + "");
             removeItem("socialLogin");
-            this.$router.push({ name, query, params });
+            // this.$router.push({ name, query, params });
+            const route = this.$router.resolve({ name, query, params }).href;
+            window.location.href = route;
           } else {
-            this.$router.push({ name: "index" });
+            // this.$router.push({ name: "index" });
+            window.location.href = this.$router.resolve({ name: "index" }).href;
           }
         } else {
           this.$router.push({ name: "index" });
