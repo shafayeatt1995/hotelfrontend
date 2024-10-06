@@ -35,16 +35,21 @@
               class="px-3 py-2 text-sm font-medium dark:text-white text-indigo-900 hover:text-indigo-700"
               >Home</nuxt-link
             >
-            <div class="relative text-left">
+            <div
+              class="relative text-left"
+              v-click-outside="
+                () => (showDivision ? (showDivision = false) : '')
+              "
+            >
               <button
                 class="flex px-3 py-2 text-sm font-medium hover:text-indigo-700 gap-2 items-center"
                 type="button"
                 :class="
-                  show === 'travel'
+                  showDivision
                     ? 'text-indigo-600'
                     : 'dark:text-white text-indigo-900'
                 "
-                @click="show = show === 'travel' ? '' : 'travel'"
+                @click="showDivision = !showDivision"
               >
                 <span>Divisions</span>
                 <i class="fa-solid fa-chevron-down"></i>
@@ -52,8 +57,7 @@
               <transition name="fade" mode="out-in">
                 <div
                   class="z-20 origin-top-left rounded-md focus:outline-none absolute left-0 right-0 top-11 md:top-[58px] w-full lg:w-48 shadow-lg dark:bg-gray-800 bg-white"
-                  v-show="show === 'travel'"
-                  v-click-outside="() => (show = '')"
+                  v-show="showDivision"
                 >
                   <div
                     class="px-2 py-1 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-1"
@@ -73,16 +77,21 @@
                 </div>
               </transition>
             </div>
-            <div class="relative text-left">
+            <div
+              class="relative text-left"
+              v-click-outside="
+                () => (showDistrict ? (showDistrict = false) : '')
+              "
+            >
               <button
                 class="flex px-3 py-2 text-sm font-medium hover:text-indigo-700 gap-2 items-center"
                 type="button"
                 :class="
-                  show === 'district'
+                  showDistrict
                     ? 'text-indigo-600'
                     : 'dark:text-white text-indigo-900'
                 "
-                @click="show = show === 'district' ? '' : 'district'"
+                @click="showDistrict = !showDistrict"
               >
                 <span>Districts</span>
                 <i class="fa-solid fa-chevron-down"></i>
@@ -90,8 +99,7 @@
               <transition name="fade" mode="out-in">
                 <div
                   class="z-20 origin-top-left rounded-md focus:outline-none absolute left-0 right-0 lg:left-auto top-11 md:top-[58px] w-full lg:w-[600px] shadow-lg dark:bg-gray-800 bg-white"
-                  v-show="show === 'district'"
-                  v-click-outside="() => (show = '')"
+                  v-show="showDistrict"
                 >
                   <div
                     class="px-2 py-1 grid md:grid-cols-4 grid-cols-2 max-h-[450px] md:max-h-max overflow-y-auto md:overflow-y-clip"
@@ -165,7 +173,8 @@ export default {
   data() {
     return {
       popup: "",
-      show: "",
+      showDivision: false,
+      showDistrict: false,
       showMenu: false,
     };
   },
