@@ -52,7 +52,7 @@
               <transition name="fade" mode="out-in">
                 <div
                   class="z-20 origin-top-left rounded-md focus:outline-none absolute left-0 right-0 top-11 md:top-[58px] w-full lg:w-48 shadow-lg dark:bg-gray-800 bg-white"
-                  v-if="show === 'travel'"
+                  v-show="show === 'travel'"
                   v-click-outside="() => (show = '')"
                 >
                   <div
@@ -90,7 +90,7 @@
               <transition name="fade" mode="out-in">
                 <div
                   class="z-20 origin-top-left rounded-md focus:outline-none absolute left-0 right-0 lg:left-auto top-11 md:top-[58px] w-full lg:w-[600px] shadow-lg dark:bg-gray-800 bg-white"
-                  v-if="show === 'district'"
+                  v-show="show === 'district'"
                   v-click-outside="() => (show = '')"
                 >
                   <div
