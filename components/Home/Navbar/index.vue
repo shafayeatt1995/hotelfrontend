@@ -187,6 +187,8 @@ export default {
       this.popup = "";
       this.show = "";
       this.showMenu = false;
+      this.showDivision = false;
+      this.showDistrict = false;
     },
   },
 };
