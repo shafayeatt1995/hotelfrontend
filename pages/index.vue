@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="-mt-24">
     <HomeHero />
     <HomeSearch class="-mt-16" />
     <HomeDestination :locations="locations" />

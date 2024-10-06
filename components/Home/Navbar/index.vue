@@ -15,7 +15,8 @@
         </nuxt-link>
         <div class="flex items-center gap-4">
           <div class="flex lg:hidden items-center gap-4">
-            <DarkMode />
+            <HomeNavbarLogin />
+
             <i
               class="fa-solid fa-bars text-3xl"
               @click="showMenu = !showMenu"
@@ -26,7 +27,7 @@
             :class="
               showMenu
                 ? 'left-0 right-0'
-                : 'left-full -right-full lg:left-auto lg:right-auto'
+                : 'left-[200%] -right-[200%] lg:left-auto lg:right-auto'
             "
           >
             <nuxt-link
@@ -126,33 +127,8 @@
             >
               Tour Guide
             </nuxt-link>
-            <div class="relative" v-if="isLoggedIn">
-              <div
-                class="size-10 cursor-pointer"
-                @click="popup = popup === 'profile' ? '' : 'profile'"
-              >
-                <nuxt-img
-                  :src="$auth.user.avatar"
-                  :alt="$auth.user.name"
-                  class="object-cover rounded-lg w-full h-full"
-                  width="80"
-                  height="80"
-                  format="webp"
-                  loading="lazy"
-                  decode="async"
-                />
-              </div>
-              <transition name="fade-scale" mode="out-in">
-                <HomeNavbarProfile
-                  v-if="popup === 'profile'"
-                  v-click-outside="() => (popup = '')"
-                />
-              </transition>
-            </div>
-            <div class="flex justify-center" v-else>
-              <Button @click.native.prevent="$nuxt.$emit('signInPopup')">
-                Sign in
-              </Button>
+            <div class="hidden lg:block h-8">
+              <HomeNavbarLogin />
             </div>
             <div class="hidden lg:block h-8">
               <DarkMode />
@@ -172,11 +148,9 @@ export default {
   directives: { clickOutside: vClickOutside.directive },
   data() {
     return {
-      popup: "",
       showDivision: false,
       showDistrict: false,
       showMenu: false,
-      isLoggedIn: false,
     };
   },
   computed: {
@@ -185,15 +159,11 @@ export default {
 
   watch: {
     $route() {
-      this.popup = "";
       this.show = "";
       this.showMenu = false;
       this.showDivision = false;
       this.showDistrict = false;
     },
-  },
-  mounted() {
-    this.isLoggedIn = this.$auth.loggedIn;
   },
 };
 </script>
