@@ -41,7 +41,6 @@ import { parseStringPromise } from "xml2js";
 
 export default {
   auth: false,
-
   head() {
     const title = `Sitemap | ${this.$pageTitle}`;
     const description =
