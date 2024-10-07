@@ -127,7 +127,7 @@
             >
               Tour Guide
             </nuxt-link>
-            <div class="hidden lg:block h-8">
+            <div class="hidden lg:block h-10">
               <HomeNavbarLogin />
             </div>
             <div class="hidden lg:block h-8">

@@ -12,11 +12,13 @@
     </template>
     <template #body>
       <div>
-        <h2 class="font-kaushan text-2xl text-indigo-900">CholoZai</h2>
-        <h1 class="text-4xl font-bold mt-4 text-gray-800">
+        <h2 class="font-kaushan text-2xl text-indigo-900 dark:text-white">
+          CholoZai
+        </h2>
+        <h1 class="text-4xl font-bold mt-4 text-gray-800 dark:text-white">
           Hello there, Welcome!
         </h1>
-        <h3 class="text-gray-700 my-2">
+        <h3 class="text-gray-700 my-2 dark:text-white">
           No password needed. Simply click & sign in. If you have no account, It
           will automatically create an account for you.
           <!-- <span
@@ -40,7 +42,7 @@
             <GoogleIcon /> {{ createMode ? "Create account" : "Sign in" }} with
             google
           </Button>
-          <p class="text-center text-gray-800 font-bold">or</p>
+          <p class="text-center text-gray-800 dark:text-white font-bold">or</p>
           <Button
             variant="lightGray"
             class="w-full"

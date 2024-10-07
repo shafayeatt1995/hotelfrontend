@@ -53,7 +53,7 @@
             <nuxt-link
               v-for="(facility, key) in sortFacilities"
               :key="key"
-              class="bg-gray-100 min-h-full rounded-xl py-5 block"
+              class="bg-gray-100 dark:bg-gray-900 min-h-full rounded-xl py-5 block"
               :to="{
                 name: 'search-hotels',
                 query: { facilities: [facility._id] },
@@ -62,10 +62,12 @@
               <div class="flex justify-center">
                 <div
                   v-html="facility.icon"
-                  class="facility-icon size-24 bg-white text-gray-800 flex justify-center items-center rounded-full"
+                  class="facility-icon size-24 bg-white dark:bg-gray-800 text-gray-800 dark:text-white flex justify-center items-center rounded-full"
                 ></div>
               </div>
-              <p class="text-center mt-3 capitalize font-semibold text-xl">
+              <p
+                class="text-center mt-3 capitalize font-semibold text-xl text-gray-800 dark:text-white"
+              >
                 {{ facility.name }}
               </p>
             </nuxt-link>

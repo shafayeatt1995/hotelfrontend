@@ -3,10 +3,10 @@
     <div class="relative flex justify-center z-[999]" v-if="modal" :key="key">
       <div class="fixed inset-0 z-40 overflow-y-auto" :key="key">
         <div
-          class="flex items-center justify-center min-h-screen bg-gray-500/70"
+          class="flex items-center justify-center min-h-screen bg-gray-500/70 dark:bg-black/50 backdrop-blur-sm"
         >
           <div
-            class="absolute lg:relative bottom-0 inline-block p-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-2xl shadow-xl w-full sm:align-middle opacity-100"
+            class="absolute lg:relative bottom-0 inline-block p-4 overflow-hidden text-left align-bottom transition-all transform bg-white dark:bg-gray-800 dark:text-white text-gray-800 rounded-2xl shadow-xl w-full sm:align-middle opacity-100"
             :class="[getWidth, modal ? 'translate-y-0' : 'translate-y-full']"
           >
             <slot name="title" />

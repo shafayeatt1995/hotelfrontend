@@ -94,6 +94,7 @@ export default {
         { name: "Terms & Conditions", to: { name: "terms" } },
         { name: "Refund policy", to: { name: "refund-policy" } },
         { name: "Privacy policy", to: { name: "privacy-policy" } },
+        { name: "Contact us", to: { name: "contact" } },
       ],
     };
   },

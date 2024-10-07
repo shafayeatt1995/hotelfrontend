@@ -27,7 +27,7 @@
         <nuxt-link
           :to="{ name: 'location-slug-bn', params: { slug: post.slug } }"
           :title="post.bnTitle"
-          class="text-xl font-semibold dark:text-white pt-2 inline-block"
+          class="text-xl font-semibold text-gray-800 dark:text-white pt-2 inline-block"
         >
           <span
             class="bg-gradient-to-r from-green-200 to-green-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-purple-800 dark:to-purple-900 capitalize"
@@ -35,12 +35,10 @@
           >
         </nuxt-link>
       </h2>
-      <p class="pb-4 leading-tight mt-2">
+      <p class="pb-4 leading-tight mt-2 text-gray-800 dark:text-white">
         {{ post.bnContent[0].content.join(" ").slice(0, 120) }} ...
       </p>
-      <div
-        class="mt-1 flex items-center text-gray-500 dark:text-gray-400 gap-2"
-      >
+      <div class="mt-1 flex items-center text-gray-700 dark:text-white gap-2">
         <p class="flex items-center gap-1">
           <span class="truncate text-sm">শাফায়েত আল-অনিক</span>
         </p>
