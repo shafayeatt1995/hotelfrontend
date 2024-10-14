@@ -252,10 +252,6 @@ export default {
           href: `${this.baseUrl + this.$route.path}`,
           hreflang: "en-US",
         },
-        {
-          rel: "canonical",
-          href: `${this.baseUrl + this.$route.path}/bn`,
-        },
       ],
       script: [
         {
