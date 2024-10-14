@@ -22,11 +22,6 @@
     },
     {
       "permanent": true,
-      "source": "/blog/page/36",
-      "destination": "/location/page/9"
-    },
-    {
-      "permanent": true,
       "source": "/blog/post/botanical_garden_mymensingh_k",
       "destination": "/location/botanical-garden-mymensingh"
     },
@@ -169,16 +164,6 @@
       "permanent": true,
       "source": "/blog/post/mahera_landlord",
       "destination": "/location/mohera-jamindar-bari"
-    },
-    {
-      "permanent": true,
-      "source": "/blog/page/24",
-      "destination": "/location/page/24"
-    },
-    {
-      "permanent": true,
-      "source": "/blog/page/41",
-      "destination": "/location/page/41"
     },
     {
       "permanent": true,
