@@ -21,18 +21,7 @@
         <h3 class="text-gray-700 my-2 dark:text-white">
           No password needed. Simply click & sign in. If you have no account, It
           will automatically create an account for you.
-          <!-- <span
-            class="text-indigo-600 cursor-pointer"
-            @click="createMode = !createMode"
-            >{{ createMode ? "Sign in" : "Create an account" }}</span
-          > -->
         </h3>
-        <div class="flex justify-center">
-          <p class="mt-5 bg-white text-gray-700 px-5">
-            {{ createMode ? "Create account" : "Sign in" }} with
-          </p>
-        </div>
-        <div class="border border-gray-300 -my-3"></div>
         <div class="mt-12 flex flex-col gap-2 mb-4">
           <Button
             variant="lightGray"
@@ -41,15 +30,6 @@
           >
             <GoogleIcon /> {{ createMode ? "Create account" : "Sign in" }} with
             google
-          </Button>
-          <p class="text-center text-gray-800 dark:text-white font-bold">or</p>
-          <Button
-            variant="lightGray"
-            class="w-full"
-            @click.native.prevent="signin('facebook')"
-          >
-            <i class="fa-brands fa-facebook-f text-blue-700"></i>
-            {{ createMode ? "Create account" : "Sign in" }} with Facebook
           </Button>
         </div>
       </div>

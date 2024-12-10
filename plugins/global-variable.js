@@ -5,7 +5,7 @@ const globalVal = {
   install(Vue) {
     Vue.mixin({
       computed: {
-        ...mapGetters({ $pageTitle: "pageTitle" }),
+        ...mapGetters({ $pageTitle: "pageTitle", $api: "urlApi" }),
         $taka: () => "৳",
       },
     });

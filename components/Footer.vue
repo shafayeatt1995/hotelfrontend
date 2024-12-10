@@ -30,9 +30,9 @@
         </div>
         <div>
           <p class="text-xl font-bold mb-1">Need Help ?</p>
-          <p class="">
-            We are Always here for you! Knock us on Whatsapp anytime or Call our
-            Hotline (10AM - 10PM).
+          <p>
+            We are Always here for you! Knock us on Whatsapp (10AM - 10PM) or
+            Email us.
           </p>
         </div>
         <div>
@@ -43,11 +43,6 @@
             <div class="flex">
               <a href="mailto:info@cholozai.com"
                 ><i class="fa-solid fa-at"></i> info@cholozai.com</a
-              >
-            </div>
-            <div class="flex">
-              <a href="tel:+8801595106884"
-                ><i class="fa-solid fa-phone"></i> 01595-106884</a
               >
             </div>
             <div class="flex">

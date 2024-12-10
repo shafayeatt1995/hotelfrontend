@@ -428,7 +428,7 @@ export default {
           this.texts = [];
           this.text = "";
         } catch (error) {
-          console.log(error);
+          console.error(error);
         } finally {
           this.replaceLoading = false;
           this.click = true;

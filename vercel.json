@@ -177,6 +177,11 @@
     },
     {
       "permanent": true,
+      "source": "/location/bangladesh-military-museum",
+      "destination": "/location/bangabandhu-military-museum"
+    },
+    {
+      "permanent": true,
       "source": "/blog/post/:slug*",
       "destination": "/location/:slug*"
     }

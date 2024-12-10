@@ -141,6 +141,7 @@ export const actions = {
 export const getters = {
   baseUrl: (state) => state.baseUrl,
   apiUrl: (state) => state.apiUrl,
+  urlApi: (state) => `${state.apiUrl}/api`,
   pageTitle: () => process.env.APP_NAME || "CholoZai",
   windowWidth: (state) => state.windowWidth,
   superAdmin: (state) =>

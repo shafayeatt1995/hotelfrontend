@@ -395,7 +395,7 @@ export default {
           const audio = new Audio("/audio/success.mp3");
           audio.play();
         } catch (error) {
-          console.log(error);
+          console.error(error);
           const audio = new Audio("/audio/error.mp3");
           audio.play();
         } finally {
