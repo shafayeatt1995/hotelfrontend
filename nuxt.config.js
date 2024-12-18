@@ -71,6 +71,12 @@ export default {
         src: `/js/analytics.js`,
         body: true,
       },
+      {
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4198613489910321",
+        async: true,
+        crossorigin: "anonymous",
+        head: true,
+      },
     ],
   },
 
