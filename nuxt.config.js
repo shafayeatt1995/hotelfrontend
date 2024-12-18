@@ -23,7 +23,7 @@ export default {
         content: `${process.env.BASE_URL}/og-image.webp`,
       },
       { property: "og:site_name", content: `Cholozai` },
-      { property: "og:url", content: `https://cholozai.com` },
+      { property: "og:url", content: `https://www.cholozai.com` },
       { property: "og:type", content: `website` },
       {
         name: "twitter:image",
@@ -125,7 +125,7 @@ export default {
   },
 
   sitemap: {
-    hostname: "https://cholozai.com",
+    hostname: "https://www.cholozai.com",
     path: "/sitemap.xml",
     gzip: true,
     exclude: ["/dashboard/**"],

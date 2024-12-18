@@ -3,4 +3,4 @@ Allow: /
 Disallow: /dashboard/
 Disallow: /blog/
 Disallow: /_nuxt/
-Sitemap: https://cholozai.com/sitemap.xml
+Sitemap: https://www.cholozai.com/sitemap.xml

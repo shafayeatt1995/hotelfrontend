@@ -91,7 +91,7 @@
       </p>
       <div class="pt-10">
         <p class="my-4">
-          At <strong>https://cholozai.com</strong>, we are committed to
+          At <strong>https://www.cholozai.com</strong>, we are committed to
           protecting and respecting your privacy. This Privacy Policy explains
           how we collect, use, and protect your personal information when you
           visit our website.
@@ -99,8 +99,8 @@
 
         <h2 class="text-2xl font-semibold mt-6 mb-4">Information We Collect</h2>
         <p class="my-4">
-          When you visit <strong>https://cholozai.com</strong>, we may collect
-          the following types of personal information:
+          When you visit <strong>https://www.cholozai.com</strong>, we may
+          collect the following types of personal information:
         </p>
         <ul class="list-disc list-inside ml-4">
           <li>
@@ -141,7 +141,7 @@
 
         <h2 class="text-2xl font-semibold mt-6 mb-4">Cookies</h2>
         <p class="my-4">
-          <strong>https://cholozai.com</strong> uses cookies to enhance your
+          <strong>https://www.cholozai.com</strong> uses cookies to enhance your
           browsing experience. Cookies are small data files that are placed on
           your device when you visit our website. You can choose to disable
           cookies in your browser settings, but this may limit some

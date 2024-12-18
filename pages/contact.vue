@@ -8,7 +8,7 @@
       <p class="my-4">
         We would love to hear from you! Whether you have questions, feedback, or
         inquiries about travel destinations, feel free to reach out to us. Our
-        team at <strong>https://cholozai.com</strong> is here to assist you.
+        team at <strong>https://www.cholozai.com</strong> is here to assist you.
       </p>
 
       <form

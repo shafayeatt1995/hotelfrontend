@@ -40,13 +40,13 @@
           <p class="my-4">
             By accessing this website, we assume you accept these terms and
             conditions. Do not continue to use
-            <strong>https://cholozai.com</strong> if you do not agree to all the
-            terms and conditions stated on this page.
+            <strong>https://www.cholozai.com</strong> if you do not agree to all
+            the terms and conditions stated on this page.
           </p>
 
           <h2 class="mt-6 text-4xl font-semibold">General Information</h2>
           <p class="my-4">
-            <strong>https://cholozai.com</strong> provides users with
+            <strong>https://www.cholozai.com</strong> provides users with
             information, guides, and tips about travel destinations. The
             information on this site is for general information purposes only
             and is subject to change without notice.
@@ -56,7 +56,7 @@
           <p class="my-4">
             All content published on this website, including but not limited to
             text, images, logos, and design, is the intellectual property of
-            <strong>https://cholozai.com</strong> unless otherwise stated.
+            <strong>https://www.cholozai.com</strong> unless otherwise stated.
             Unauthorized use or reproduction of this content is prohibited.
           </p>
 
@@ -87,17 +87,17 @@
           <p class="my-4">
             Our website may contain links to third-party websites or services
             that are not owned or controlled by
-            <strong>https://cholozai.com</strong>. We have no control over, and
-            assume no responsibility for, the content, privacy policies, or
+            <strong>https://www.cholozai.com</strong>. We have no control over,
+            and assume no responsibility for, the content, privacy policies, or
             practices of any third-party sites or services.
           </p>
 
           <h2 class="mt-6 text-4xl font-semibold">Limitation of Liability</h2>
           <p class="my-4">
-            <strong>https://cholozai.com</strong> will not be held responsible
-            or liable for any damages arising out of your use of the website,
-            including but not limited to indirect, incidental, or consequential
-            damages.
+            <strong>https://www.cholozai.com</strong> will not be held
+            responsible or liable for any damages arising out of your use of the
+            website, including but not limited to indirect, incidental, or
+            consequential damages.
           </p>
           <p class="my-4">
             We are not responsible for any personal injury, financial loss, or
@@ -119,11 +119,11 @@
           <p class="my-4">
             Users may be allowed to submit comments, reviews, or other content
             on the website. By submitting content, you grant
-            <strong>https://cholozai.com</strong> a non-exclusive, royalty-free,
-            perpetual, and worldwide license to use, reproduce, and distribute
-            your content. You are responsible for ensuring that any content you
-            submit complies with applicable laws and does not infringe on any
-            third-party rights.
+            <strong>https://www.cholozai.com</strong> a non-exclusive,
+            royalty-free, perpetual, and worldwide license to use, reproduce,
+            and distribute your content. You are responsible for ensuring that
+            any content you submit complies with applicable laws and does not
+            infringe on any third-party rights.
           </p>
 
           <h2 class="mt-6 text-4xl font-semibold">Privacy Policy</h2>
