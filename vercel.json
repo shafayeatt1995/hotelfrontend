@@ -1,187 +1,187 @@
 {
   "redirects": [
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/musa_khan_mosque_i",
       "destination": "/location/musa-khan-mosque-dhaka"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/three_leaders_2",
       "destination": "/location/the-mausoleum-of-three-leaders"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/unbeatable_n",
       "destination": "/"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/bark",
       "destination": "/location/sadarghat-dhaka"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/botanical_garden_mymensingh_k",
       "destination": "/location/botanical-garden-mymensingh"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/petrail_mosque_0",
       "destination": "/location/pathrail-mosque-faridpur"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/rack_2",
       "destination": "/"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/puthia_rajbari",
       "destination": "/location/puthia-rajbari-rajshahi"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/liberation_war_museum_5",
       "destination": "/location/liberation-war-museum-dhaka"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/paharpur_buddhist_monastery",
       "destination": "/location/paharpur-buddhist-bihar"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/bashundhara_j",
       "destination": "/location/bashundhara-city-dhaka"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/baitul_mukarram_mosque_6",
       "destination": "/location/baitul-mukarram-national-mosque-dhaka"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/sadarghat_w",
       "destination": "/location/sadarghat-dhaka"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/bahadur_shah_park_v",
       "destination": "/location/bahadur-shah-park-dhaka"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/billy_n",
       "destination": "/location/lal-shapla-bill"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/hunting_e",
       "destination": "/location/otter-fishing-in-narail-bangladesh"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/bangkok_l",
       "destination": "/location/bangkok-thailand"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/dhanuka_mansa_home_w",
       "destination": "/location/dhanuka-manasha-bari-shariatpur"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/panam_nagar",
       "destination": "/location/panam-city"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/nahar_garden_picnic_spot_v",
       "destination": "/location/nahar-garden-picnic-spot-manikganj"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/sand_q",
       "destination": "/location/sandwip"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/moinot-ghat-dhaka",
       "destination": "/location/moinot-ghat-dhaka"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/lake_view_island_g",
       "destination": "/location/lake-view-island-kaptai"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/hazrat_shahjalal_r_shrine",
       "destination": "/location/hazrat-shahjalal-mazar"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/khan-jahan-ali-bridge-khulna",
       "destination": "/location/khan-jahan-ali-bridge-khulna"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/garden_s",
       "destination": "/location/botanical-garden-dhaka"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/nikli_haor",
       "destination": "/location/nikli-haor-kishoreganj"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/burj_khalifa_4",
       "destination": "/location/burj-khalifa-dubai"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/neverland_i",
       "destination": "/location/neverland-dhaka"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/kalagachia-eco-tourism-park",
       "destination": "/location/kalagachia-eco-tourism-park"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/noakhali_district_jame_mosque_u",
       "destination": "/location/noakhali-zilla-jame-mosque"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/noakhali-zilla-jame-mosque",
       "destination": "/location/noakhali-zilla-jame-mosque"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/mahera_landlord",
       "destination": "/location/mohera-jamindar-bari"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/rabindranath_tagore_8",
       "destination": "/location/rabindranath-tagore-kuthibari"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/mir_masharraf_hossain_n",
       "destination": "/location/mir-mosharraf-hossain-memorial"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/location/bangladesh-military-museum",
       "destination": "/location/bangabandhu-military-museum"
     },
     {
-      "permanent": true,
+      "status": 301,
       "source": "/blog/post/:slug*",
       "destination": "/location/:slug*"
     }

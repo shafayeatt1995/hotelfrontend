@@ -113,7 +113,15 @@ export default {
   name: "HotelSearch",
   auth: false,
   head() {
-    return { title: `Search - ${this.$pageTitle}` };
+    return {
+      title: `Search - ${this.$pageTitle}`,
+      meta: [
+        {
+          name: "robots",
+          content: "noindex, nofollow",
+        },
+      ],
+    };
   },
   data() {
     return {
