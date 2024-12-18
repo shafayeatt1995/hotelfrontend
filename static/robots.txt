@@ -1,6 +1,5 @@
 User-Agent: *
 Allow: /
 Disallow: /dashboard/
-Disallow: /blog/
 Disallow: /_nuxt/
 Sitemap: https://www.cholozai.com/sitemap.xml
