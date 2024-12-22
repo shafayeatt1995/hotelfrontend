@@ -7,6 +7,7 @@
     <LoginPopup />
     <ShareHotelPopup />
     <WindowWidth />
+    <AdModal />
   </div>
 </template>
 <script>

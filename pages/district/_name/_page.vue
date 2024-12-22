@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageName />
-    <div class="bg-white dark:bg-gray-900 py-10">
+    <div class="bg-white dark:bg-gray-900 py-10 px-2">
       <div class="container mx-auto">
         <div
           class="grid gap-5 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-10"

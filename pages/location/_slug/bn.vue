@@ -72,7 +72,7 @@
       </div>
 
       <div class="flex flex-col lg:flex-row gap-5 md:gap-10">
-        <div class="flex-1">
+        <div class="flex-1 px-2 md:px-0">
           <LanguageSwitch />
           <div
             class="flex flex-col md:flex-row justify-between md:items-center"
@@ -150,6 +150,26 @@
                 <EditMode v-model="content.content[i]" tagName="div" />
               </div>
             </article>
+            <div v-if="(key + 1) % 3 === 0">
+              <ins
+                v-if="isOnlyMobile"
+                class="adsbygoogle"
+                style="display: block"
+                data-ad-client="ca-pub-4198613489910321"
+                data-ad-slot="1628093273"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+              ></ins>
+              <ins
+                v-else
+                class="adsbygoogle"
+                style="display: block"
+                data-ad-client="ca-pub-4198613489910321"
+                data-ad-slot="6688816446"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+              ></ins>
+            </div>
             <hr v-if="key + 1 !== post.content.length" />
           </div>
           <div class="flex justify-between gap-10" v-if="isDev">
@@ -168,11 +188,27 @@
             Related Post
           </h2>
           <div class="grid md:grid-cols-3 lg:grid-cols-1 gap-5 lg:gap-10">
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-4198613489910321"
+              data-ad-slot="8972494157"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            ></ins>
             <LocationSinglePostBn
               v-for="(post, key) in related"
               :key="key + 'i'"
               :post="post"
             />
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-4198613489910321"
+              data-ad-slot="8972494157"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            ></ins>
           </div>
         </div>
       </div>
@@ -307,7 +343,7 @@ export default {
     };
   },
   computed: {
-    ...mapGetters(["isDev", "baseUrl"]),
+    ...mapGetters(["isDev", "baseUrl", "isOnlyMobile"]),
   },
   methods: {
     copyText(text) {
