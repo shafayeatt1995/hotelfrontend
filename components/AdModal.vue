@@ -31,11 +31,13 @@ export default {
     };
   },
   mounted() {
-    if (window.adsbygoogle) {
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    } else {
-      this.adModal = true;
-    }
+    setTimeout(() => {
+      if (window.adsbygoogle) {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      } else {
+        this.adModal = true;
+      }
+    }, 4000);
   },
   methods: {
     hideAds() {
