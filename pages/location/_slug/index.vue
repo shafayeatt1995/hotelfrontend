@@ -377,7 +377,7 @@ export default {
     };
   },
   computed: {
-    ...mapGetters(["isDev", "baseUrl"]),
+    ...mapGetters(["isDev", "baseUrl", "isOnlyMobile"]),
   },
   methods: {
     copyText(text) {
