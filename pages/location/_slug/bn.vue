@@ -12,6 +12,14 @@
           format="webp"
         />
       </div>
+      <ins
+        class="adsbygoogle"
+        style="display: block"
+        data-ad-client="ca-pub-4198613489910321"
+        data-ad-slot="4609479832"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      ></ins>
       <form class="flex my-5 gap-5" v-if="isDev" @submit.prevent="uploadImage">
         <input
           class="border rounded-md flex-1"
