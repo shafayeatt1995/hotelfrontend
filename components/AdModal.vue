@@ -31,10 +31,9 @@ export default {
     };
   },
   mounted() {
+    (adsbygoogle = window.adsbygoogle || []).push({});
     setTimeout(() => {
-      if (window.adsbygoogle) {
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      } else {
+      if (!window.adsbygoogle) {
         this.adModal = true;
       }
     }, 4000);
