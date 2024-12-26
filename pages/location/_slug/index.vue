@@ -12,14 +12,16 @@
           format="webp"
         />
       </div>
-      <ins
-        class="adsbygoogle"
-        style="display: block"
-        data-ad-client="ca-pub-4198613489910321"
-        data-ad-slot="4609479832"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      ></ins>
+      <div class="w-full mx-auto">
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-4198613489910321"
+          data-ad-slot="4609479832"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+      </div>
       <form
         class="flex my-5 gap-5 flex-col md:flex-row"
         v-if="isDev"
@@ -183,7 +185,7 @@
                 class="adsbygoogle"
                 style="display: block"
                 data-ad-client="ca-pub-4198613489910321"
-                data-ad-slot="1628093273"
+                data-ad-slot="4609479832"
                 data-ad-format="auto"
                 data-full-width-responsive="true"
               ></ins>
@@ -211,7 +213,7 @@
               class="adsbygoogle"
               style="display: block"
               data-ad-client="ca-pub-4198613489910321"
-              data-ad-slot="8972494157"
+              data-ad-slot="4609479832"
               data-ad-format="auto"
               data-full-width-responsive="true"
             ></ins>

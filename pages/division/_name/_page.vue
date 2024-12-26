@@ -3,6 +3,14 @@
     <PageName />
     <div class="bg-white dark:bg-gray-900 py-10 px-2">
       <div class="container mx-auto">
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-4198613489910321"
+          data-ad-slot="4609479832"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
         <div
           class="grid gap-5 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-10"
           v-if="posts && posts.length"
@@ -18,6 +26,14 @@
           <h1 class="text-3xl font-bold">No location post found</h1>
         </div>
         <Paginate :posts="posts" />
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-4198613489910321"
+          data-ad-slot="4609479832"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
       </div>
     </div>
   </div>
