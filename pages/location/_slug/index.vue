@@ -12,7 +12,19 @@
           format="webp"
         />
       </div>
-      <form class="flex my-5 gap-5" v-if="isDev" @submit.prevent="uploadImage">
+      <ins
+        class="adsbygoogle"
+        style="display: block"
+        data-ad-client="ca-pub-4198613489910321"
+        data-ad-slot="4609479832"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      ></ins>
+      <form
+        class="flex my-5 gap-5 flex-col md:flex-row"
+        v-if="isDev"
+        @submit.prevent="uploadImage"
+      >
         <input
           class="border rounded-md flex-1"
           v-model="imageURL"
@@ -166,6 +178,17 @@
                 <EditMode v-model="content.content[i]" tagName="div" />
               </div>
             </article>
+            <template v-if="(key + 1) % 3 === 0">
+              <ins
+                class="adsbygoogle"
+                style="display: block"
+                data-ad-client="ca-pub-4198613489910321"
+                data-ad-slot="1628093273"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+              ></ins>
+            </template>
+
             <hr v-if="key + 1 !== post.content.length" />
           </div>
           <div class="flex justify-between gap-10" v-if="isDev">
@@ -177,19 +200,49 @@
             >
           </div>
         </div>
-        <div class="lg:w-80">
+        <div class="lg:w-80 px-2">
           <h2
             class="md:text-4xl text-3xl font-bold mb-3 text-gray-800 dark:text-white"
           >
             Related Post
           </h2>
           <div class="grid md:grid-cols-3 lg:grid-cols-1 gap-5 lg:gap-10">
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-4198613489910321"
+              data-ad-slot="8972494157"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            ></ins>
             <LocationSinglePost
               v-for="(post, key) in related"
               :key="key + 'i'"
               :post="post"
             />
           </div>
+        </div>
+      </div>
+      <ins
+        class="adsbygoogle"
+        style="display: block"
+        data-ad-client="ca-pub-4198613489910321"
+        data-ad-slot="4609479832"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      ></ins>
+      <div class="mt-10 px-2">
+        <h2
+          class="md:text-4xl text-3xl font-bold mb-3 text-gray-800 dark:text-white"
+        >
+          Recommended For You
+        </h2>
+        <div class="grid md:grid-cols-3 gap-5 lg:gap-10">
+          <LocationSinglePost
+            v-for="(post, key) in others"
+            :key="key + 'i'"
+            :post="post"
+          />
         </div>
       </div>
     </div>
@@ -310,8 +363,8 @@ export default {
       const slug = params.slug;
       let res = await axios.get(`${apiUrl}/api/fetch/post/${slug}`);
       if (res.data?.post) {
-        const { post, related, division } = res.data;
-        return { post, related, division };
+        const { post, related, division, others } = res.data;
+        return { post, related, division, others };
       } else {
         error({ statusCode: 404, message: "Not found" });
       }
@@ -327,8 +380,9 @@ export default {
   data() {
     return {
       post: {},
-      related: {},
+      related: [],
       division: {},
+      others: [],
       title: "",
       imageURL: "",
       convert: [],
