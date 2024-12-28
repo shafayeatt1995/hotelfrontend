@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-2 mb-3">
+  <div class="flex gap-2 my-3">
     <nuxt-link
       class="border border-gray-300 rounded-lg py-2 px-3 md:px-5 flex items-center hover:bg-indigo-600 hover:text-white transition-all duration-200 w-full md:w-auto justify-center"
       :class="
