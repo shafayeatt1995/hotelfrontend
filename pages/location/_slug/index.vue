@@ -185,7 +185,7 @@
                 class="adsbygoogle"
                 style="display: block"
                 data-ad-client="ca-pub-4198613489910321"
-                data-ad-slot="4609479832"
+                data-ad-slot="8972494157"
                 data-ad-format="auto"
                 data-full-width-responsive="true"
               ></ins>
@@ -213,7 +213,7 @@
               class="adsbygoogle"
               style="display: block"
               data-ad-client="ca-pub-4198613489910321"
-              data-ad-slot="4609479832"
+              data-ad-slot="1628093273"
               data-ad-format="auto"
               data-full-width-responsive="true"
             ></ins>
@@ -228,10 +228,9 @@
       <ins
         class="adsbygoogle"
         style="display: block"
+        data-ad-format="autorelaxed"
         data-ad-client="ca-pub-4198613489910321"
-        data-ad-slot="4609479832"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
+        data-ad-slot="8664979182"
       ></ins>
       <div class="mt-10 px-2">
         <h2
