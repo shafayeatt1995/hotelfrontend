@@ -3,9 +3,7 @@
     <template #body>
       <div class="py-5">
         <p class="text-8xl text-yellow-500 text-center">🥺</p>
-        <h2
-          class="text-4xl font-bold mt-4 text-gray-800 dark:text-white text-center"
-        >
+        <h2 class="text-4xl font-bold mt-4 text-gray-800 dark:text-white text-center">
           Help Us to serve you better content
         </h2>
         <h3 class="text-gray-700 my-2 dark:text-white text-center">
@@ -31,9 +29,11 @@ export default {
     };
   },
   mounted() {
-    (adsbygoogle = window.adsbygoogle || []).push({});
+    window.adsbygoogle ? (adsbygoogle = window.adsbygoogle || []).push({}) : '';
     setTimeout(() => {
-      if (!window.adsbygoogle) {
+      if (window.adsbygoogle) {
+        (adsbygoogle = window.adsbygoogle || []).push({})
+      } else {
         this.adModal = true;
       }
     }, 4000);
