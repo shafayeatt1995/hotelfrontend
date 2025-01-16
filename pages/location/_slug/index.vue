@@ -170,7 +170,7 @@
                 <EditMode v-model="content.content[i]" tagName="div" />
               </div>
             </article>
-            <template v-if="key + 1 === 3">
+            <template v-if="key === 1">
               <ins
                 class="adsbygoogle"
                 style="display: block"
