@@ -36,7 +36,7 @@
               class="px-3 py-2 text-sm font-medium dark:text-white text-indigo-900 hover:text-indigo-700"
               >Home</nuxt-link
             >
-            <div
+            <!-- <div
               class="relative text-left"
               v-click-outside="
                 () => (showDivision ? (showDivision = false) : '')
@@ -125,7 +125,7 @@
                   </div>
                 </div>
               </transition>
-            </div>
+            </div> -->
             <nuxt-link
               class="px-3 py-2 text-sm font-medium text-indigo-900 dark:text-white hover:text-indigo-700"
               :to="{ name: 'tour-guide' }"
@@ -160,7 +160,7 @@ export default {
     };
   },
   computed: {
-    ...mapGetters(["divisions", "districts"]),
+    //...mapGetters(["divisions", "districts"]),
   },
 
   watch: {

@@ -130,8 +130,8 @@ export const actions = {
   },
   async fetchNavbarData({ commit, state }) {
     try {
-      const res = await axios.get(`${state.apiUrl}/api/fetch/navbar`);
-      commit("setNavbarData", res.data);
+      // const res = await axios.get(`${state.apiUrl}/api/fetch/navbar`);
+      // commit("setNavbarData", res.data);
     } catch (error) {
       console.error("Failed to fetch navbar data:", error);
     }
