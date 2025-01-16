@@ -44,4 +44,8 @@ export class CommonApi extends BaseApi {
   fetchReviewSummary(body) {
     return this.api.$post(`fetch/review-summary`, body);
   }
+
+  fetchDemoPost(body) {
+    return this.api.$post(`fetch/demo-post`, body);
+  }
 }

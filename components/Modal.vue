@@ -41,6 +41,8 @@ export default {
     getWidth() {
       if (this.size === "lg") {
         return "lg:w-2/4";
+      } else if (this.size === "xl") {
+        return "lg:w-3/4";
       } else if (this.size === "sm") {
         return "lg:w-1/3";
       } else if (this.size === "fixed") {

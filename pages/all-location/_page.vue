@@ -2,14 +2,24 @@
   <div>
     <PageName> All Locations </PageName>
     <div class="container mx-auto py-5">
-      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-10" v-if="posts && posts.length">
-        <LocationSinglePost v-for="(post, key) in posts" :key="key + 'i'" :post="post" />
+      <div
+        class="grid gap-5 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-10"
+        v-if="posts && posts.length"
+      >
+        <LocationSinglePost
+          v-for="(post, key) in posts"
+          :key="key + 'i'"
+          :post="post"
+        />
       </div>
       <div v-else class="w-full flex flex-col justify-center items-center">
         <div ref="empty" class="h-96"></div>
         <h1 class="text-3xl font-bold">No location post found</h1>
       </div>
-      <div class="mt-10 flex items-center justify-center" v-if="posts && posts.length">
+      <div
+        class="mt-10 flex items-center justify-center"
+        v-if="posts && posts.length"
+      >
         <Paginate :posts="posts" />
       </div>
       <div v-else class="flex justify-center items-center"></div>
@@ -40,7 +50,6 @@ export default {
       const page = params?.page || 1;
       let res = await axios.get(`${apiUrl}/api/fetch/posts/${page}`);
       if (res.data) {
-        console.log(res.data)
         const { posts } = res.data;
         return { posts, page };
       } else {

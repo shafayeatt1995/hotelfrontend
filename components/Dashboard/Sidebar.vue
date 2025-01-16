@@ -131,6 +131,12 @@ export default {
           icon: "fas fa-cubes",
         },
         {
+          show: true,
+          name: "dashboard-blog",
+          title: "Blog",
+          icon: "fas fa-cubes",
+        },
+        {
           show: this.manager || this.owner,
           name: "dashboard-booking",
           title: "Booking",

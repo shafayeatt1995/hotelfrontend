@@ -12,16 +12,6 @@
           format="webp"
         />
       </div>
-      <div class="w-full mx-auto">
-        <ins
-          class="adsbygoogle"
-          style="display: block"
-          data-ad-client="ca-pub-4198613489910321"
-          data-ad-slot="4609479832"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        ></ins>
-      </div>
       <form
         class="flex my-5 gap-5 flex-col md:flex-row"
         v-if="isDev"
@@ -180,12 +170,12 @@
                 <EditMode v-model="content.content[i]" tagName="div" />
               </div>
             </article>
-            <template v-if="(key + 1) % 3 === 0">
+            <template v-if="key + 1 === 3">
               <ins
                 class="adsbygoogle"
                 style="display: block"
                 data-ad-client="ca-pub-4198613489910321"
-                data-ad-slot="8972494157"
+                data-ad-slot="4609479832"
                 data-ad-format="auto"
                 data-full-width-responsive="true"
               ></ins>

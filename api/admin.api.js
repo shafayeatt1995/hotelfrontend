@@ -164,4 +164,16 @@ export class AdminApi extends BaseApi {
   fetchActiveUsers() {
     return this.api.$get(`user/active-user`);
   }
+
+  fetchDivision() {
+    return this.api.$get(`blog/division`);
+  }
+
+  fetchDistrict(id) {
+    return this.api.$get(`blog/district/${id}`);
+  }
+
+  createDemoBlogPost(body) {
+    return this.api.$post(`blog/demo-post`, body);
+  }
 }

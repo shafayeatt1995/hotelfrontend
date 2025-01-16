@@ -42,7 +42,7 @@ export function validateDate(date, defaultDate) {
     : new Date();
 }
 
-export function strSlug(val) {
+export function strSlug(val = "") {
   return val
     .toLowerCase()
     .replace(/\s+/g, "_")

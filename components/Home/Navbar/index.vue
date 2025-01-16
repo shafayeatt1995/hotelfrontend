@@ -63,7 +63,10 @@
                   <div
                     class="px-2 py-1 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-1"
                   >
-                    <div v-for="division in divisions" :key="division.name">
+                    <div
+                      v-for="(division, i) in divisions"
+                      :key="i + division.name"
+                    >
                       <nuxt-link
                         class="flex items-center space-x-2 px-3 py-2 text-sm lg:space-x-4 text-gray-700 hover:text-indigo-500 focus:text-indigo-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-900 rounded-md transition-all duration-200"
                         :to="{
@@ -105,7 +108,10 @@
                   <div
                     class="px-2 py-1 grid md:grid-cols-4 grid-cols-2 max-h-[450px] md:max-h-max overflow-y-auto md:overflow-y-clip"
                   >
-                    <div v-for="district in districts" :key="district.name">
+                    <div
+                      v-for="(district, i) in districts"
+                      :key="i + district.name"
+                    >
                       <nuxt-link
                         class="flex items-center space-x-2 px-3 py-2 text-sm lg:space-x-4 text-gray-700 hover:text-indigo-500 focus:text-indigo-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-900 rounded-md transition-all duration-200"
                         :to="{
