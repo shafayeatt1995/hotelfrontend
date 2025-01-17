@@ -1,5 +1,5 @@
 <template>
-  <div class="selection:bg-indigo-600 selection:text-white">
+  <div class="selection:bg-indigo-600 selection:text-white dark:bg-gray-900">
     <HomeNavbar />
     <Nuxt />
     <Footer />
