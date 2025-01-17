@@ -170,7 +170,17 @@
                 <EditMode v-model="content.content[i]" tagName="div" />
               </div>
             </article>
-            <template v-if="key === 1">
+            <template v-if="key === 0">
+              <ins
+                class="adsbygoogle"
+                style="display: block; text-align: center"
+                data-ad-layout="in-article"
+                data-ad-format="fluid"
+                data-ad-client="ca-pub-4198613489910321"
+                data-ad-slot="4429951209"
+              ></ins>
+            </template>
+            <template v-if="key === 3">
               <ins
                 class="adsbygoogle"
                 style="display: block"
@@ -199,42 +209,30 @@
             Related Post
           </h2>
           <div class="grid md:grid-cols-3 lg:grid-cols-1 gap-5 lg:gap-10">
-            <ins
-              class="adsbygoogle"
-              style="display: block"
-              data-ad-client="ca-pub-4198613489910321"
-              data-ad-slot="1628093273"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-            ></ins>
-            <LocationSinglePost
-              v-for="(post, key) in related"
-              :key="key + 'i'"
-              :post="post"
-            />
+            <template v-for="(post, key) in related">
+              <LocationSinglePost :key="key + 'i'" :post="post" />
+              <template v-if="key === 0">
+                <ins
+                  class="adsbygoogle"
+                  style="display: block"
+                  data-ad-format="fluid"
+                  data-ad-layout-key="-66+c2-e-35+jb"
+                  data-ad-client="ca-pub-4198613489910321"
+                  data-ad-slot="1356262972"
+                ></ins>
+              </template>
+            </template>
           </div>
         </div>
       </div>
-      <ins
-        class="adsbygoogle"
-        style="display: block"
-        data-ad-format="autorelaxed"
-        data-ad-client="ca-pub-4198613489910321"
-        data-ad-slot="8664979182"
-      ></ins>
-      <div class="mt-10 px-2">
-        <h2
-          class="md:text-4xl text-3xl font-bold mb-3 text-gray-800 dark:text-white"
-        >
-          Recommended For You
-        </h2>
-        <div class="grid md:grid-cols-3 gap-5 lg:gap-10">
-          <LocationSinglePost
-            v-for="(post, key) in others"
-            :key="key + 'i'"
-            :post="post"
-          />
-        </div>
+      <div class="my-5 px-2">
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-format="autorelaxed"
+          data-ad-client="ca-pub-4198613489910321"
+          data-ad-slot="6522596224"
+        ></ins>
       </div>
     </div>
   </div>
@@ -354,8 +352,8 @@ export default {
       const slug = params.slug;
       let res = await axios.get(`${apiUrl}/api/fetch/post/${slug}`);
       if (res.data?.post) {
-        const { post, related, division, others } = res.data;
-        return { post, related, division, others };
+        const { post, related, division } = res.data;
+        return { post, related, division };
       } else {
         error({ statusCode: 404, message: "Not found" });
       }
