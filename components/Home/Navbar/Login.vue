@@ -31,12 +31,16 @@
 
 <script>
 import vClickOutside from "v-click-outside";
+import { mapGetters } from "vuex";
 export default {
   directives: { clickOutside: vClickOutside.directive },
   data() {
     return {
       popup: false,
     };
+  },
+  computed: {
+    ...mapGetters(["isDev"]),
   },
   watch: {
     $route() {

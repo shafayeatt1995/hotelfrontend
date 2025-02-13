@@ -16,11 +16,21 @@
         <div class="flex items-center gap-4">
           <div class="flex lg:hidden items-center gap-4">
             <HomeNavbarLogin />
-
-            <i
-              class="fa-solid fa-bars text-3xl"
-              @click="showMenu = !showMenu"
-            ></i>
+            <template>
+              <svg
+                @click="showMenu = !showMenu"
+                width="30"
+                height="34"
+                viewBox="0 0 30 34"
+                xmlns="http://www.w3.org/2000/svg"
+                class="cursor-pointer"
+              >
+                <path
+                  d="M0 6.375C0 5.19961 0.957589 4.25 2.14286 4.25H27.8571C29.0424 4.25 30 5.19961 30 6.375C30 7.55039 29.0424 8.5 27.8571 8.5H2.14286C0.957589 8.5 0 7.55039 0 6.375ZM0 17C0 15.8246 0.957589 14.875 2.14286 14.875H27.8571C29.0424 14.875 30 15.8246 30 17C30 18.1754 29.0424 19.125 27.8571 19.125H2.14286C0.957589 19.125 0 18.1754 0 17ZM30 27.625C30 28.8004 29.0424 29.75 27.8571 29.75H2.14286C0.957589 29.75 0 28.8004 0 27.625C0 26.4496 0.957589 25.5 2.14286 25.5H27.8571C29.0424 25.5 30 26.4496 30 27.625Z"
+                  fill="black"
+                />
+              </svg>
+            </template>
           </div>
           <div
             class="lg:items-center gap-3 flex flex-col lg:flex-row absolute lg:relative max-h-96 top-[64px] lg:top-auto bg-white/30 dark:bg-black/30 backdrop-blur-md lg:backdrop-blur-none lg:bg-transparent lg:dark:bg-transparent pb-5 lg:pb-0 transition-all duration-300"
