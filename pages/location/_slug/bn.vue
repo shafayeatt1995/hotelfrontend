@@ -280,7 +280,6 @@ export default {
         },
       ],
     };
-
     return {
       title,
       meta: meta({ title, description }),
