@@ -288,9 +288,10 @@ export default {
         {
           rel: "alternate",
           href: `${
-            this.baseUrl + this.$route.path.slice(-3) === "/bn"
+            this.baseUrl +
+            (this.$route.path.slice(-3) === "/bn"
               ? this.$route.path.slice(0, -3)
-              : this.$route.path
+              : this.$route.path)
           }`,
           hreflang: "en",
         },
@@ -302,9 +303,10 @@ export default {
         {
           rel: "alternate",
           href: `${
-            this.baseUrl + this.$route.path.slice(-3) === "/bn"
+            this.baseUrl +
+            (this.$route.path.slice(-3) === "/bn"
               ? this.$route.path.slice(0, -3)
-              : this.$route.path
+              : this.$route.path)
           }`,
           hreflang: "x-default",
         },
