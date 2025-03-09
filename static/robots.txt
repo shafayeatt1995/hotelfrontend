@@ -1,6 +1,10 @@
 User-Agent: *
 Allow: /
 Disallow: /dashboard/
+Disallow: /profile/
+Disallow: /social-login/
+Disallow: /login/
+Disallow: /booking/
 Disallow: /ge/
 Disallow: /_nuxt/
 Sitemap: https://www.cholozai.com/sitemap.xml
