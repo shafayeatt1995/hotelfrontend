@@ -307,8 +307,18 @@ export default {
       link: [
         {
           rel: "alternate",
+          href: `${this.baseUrl + this.$route.path}`,
+          hreflang: "en",
+        },
+        {
+          rel: "alternate",
           href: `${this.baseUrl + this.$route.path}/bn`,
           hreflang: "bn-BD",
+        },
+        {
+          rel: "alternate",
+          href: `${this.baseUrl + this.$route.path}`,
+          hreflang: "x-default",
         },
       ],
       script: [

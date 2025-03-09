@@ -287,8 +287,26 @@ export default {
       link: [
         {
           rel: "alternate",
+          href: `${
+            this.baseUrl + this.$route.path.slice(-3) === "/bn"
+              ? this.$route.path.slice(0, -3)
+              : this.$route.path
+          }`,
+          hreflang: "en",
+        },
+        {
+          rel: "alternate",
           href: `${this.baseUrl + this.$route.path}`,
-          hreflang: "en-US",
+          hreflang: "bn-BD",
+        },
+        {
+          rel: "alternate",
+          href: `${
+            this.baseUrl + this.$route.path.slice(-3) === "/bn"
+              ? this.$route.path.slice(0, -3)
+              : this.$route.path
+          }`,
+          hreflang: "x-default",
         },
       ],
       script: [
