@@ -1,14 +1,14 @@
 <template>
   <div class="bg-white dark:bg-gray-900 lg:py-24 py-20">
     <div class="container mx-auto">
-      <div class="flex justify-center mb-10">
+      <div class="flex justify-center mb-10 px-2">
         <nuxt-img
           loading="lazy"
           decoding="async"
           :src="imgB64 || `/images/location/${post.image}`"
           :alt="post.title"
           :title="post.title"
-          class="object-cover w-full aspect-[16/9] md:w-2/3"
+          class="object-cover w-full aspect-[16/9] md:w-2/3 rounded lg:rounded-xl"
           format="webp"
         />
       </div>

@@ -46,7 +46,7 @@ export default {
       } else if (this.size === "sm") {
         return "lg:w-1/3";
       } else if (this.size === "fixed") {
-        return `lg:w-[650px]`;
+        return `lg:w-[750px]`;
       }
       randomStr;
     },
