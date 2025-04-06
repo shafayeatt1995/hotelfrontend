@@ -82,7 +82,7 @@ export default {
     // }, 4000);
     setTimeout(() => {
       this.adModal = true;
-    }, 10);
+    }, 5000);
   },
   methods: {
     hideAds() {
