@@ -80,9 +80,9 @@ export default {
     //     this.adModal = this.isDev ? false : true;
     //   }
     // }, 4000);
-    setTimeout(() => {
-      this.adModal = true;
-    }, 5000);
+    // setTimeout(() => {
+    //   this.adModal = true;
+    // }, 5000);
   },
   methods: {
     hideAds() {
