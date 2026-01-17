@@ -33,7 +33,7 @@ export default {
       { name: "robots", content: `max-image-preview:large` },
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.png" },
+      { rel: "icon", type: "icon", href: "/favicon.ico", sizes: "any" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
         rel: "preconnect",
@@ -135,7 +135,7 @@ export default {
     path: "/sitemap.xml",
     gzip: true,
     exclude: ["/dashboard/**"],
-    defaults: { changefreq: "daily", priority: 1, lastmod: new Date() },
+    defaults: { changefreq: "daily", priority: 1 },
   },
 
   axios: { proxy: true, baseURL: process.env.API_URL },
