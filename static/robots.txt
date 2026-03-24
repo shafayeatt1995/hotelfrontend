@@ -7,4 +7,4 @@ Disallow: /login
 Disallow: /booking
 Disallow: /ge
 Disallow: /_nuxt/
-Sitemap: https://www.colozai.com/sitemap.xml
+Sitemap: https://colozai.com/sitemap.xml

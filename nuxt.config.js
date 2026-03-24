@@ -23,7 +23,10 @@ export default {
         content: `${process.env.BASE_URL}/og-image.webp`,
       },
       { property: "og:site_name", content: `ColoZai` },
-      { property: "og:url", content: `https://www.colozai.com` },
+      {
+        property: "og:url",
+        content: process.env.BASE_URL || "https://colozai.com",
+      },
       { property: "og:type", content: `website` },
       {
         name: "twitter:image",
@@ -132,7 +135,7 @@ export default {
   },
 
   sitemap: {
-    hostname: process.env.CANONICAL_ORIGIN || "https://colozai.com",
+    hostname: process.env.BASE_URL || "https://colozai.com",
     path: "/sitemap.xml",
     gzip: true,
     exclude: ["/dashboard/**"],
