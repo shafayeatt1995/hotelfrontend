@@ -35,14 +35,14 @@
         you would like more information about this practice and to know your
         choices about not having this anonymous information used by our third
         party service provider, with specific reference to booking/e-commerce
-        transactions, CholoZai collects the following personal sensitive
-        information from you while transacting through CholoZai, this includes
+        transactions, ColoZai collects the following personal sensitive
+        information from you while transacting through ColoZai, this includes
         your Name and Sex, Phone Number, Billing Address, Credit Card details
         and Date of birth in case of a child.
       </p>
       <br />
       <p>
-        CholoZai does not sell or trade upon any of the above foregoing
+        ColoZai does not sell or trade upon any of the above foregoing
         information without the consent of the user or customer.
       </p>
       <br />
@@ -57,7 +57,7 @@
         hotels, etc., for the purpose of reservation and booking the services
         for the customer/traveler. Information like Credit Card Details and Net
         Banking Details are usually collected directly by the payment gateways
-        and banks and not by CholoZai, but if ever stored or retained by us, the
+        and banks and not by ColoZai, but if ever stored or retained by us, the
         data will be stored internally, secured and is never shared, except that
         they may be shared with third party private/government security agencies
         to screen for fraudulent activities. These details are also shared with
@@ -65,24 +65,24 @@
         &amp; Discounts'. Information like Phone number, E-mail address and
         billing address may be used for promotional purposes, unless the
         customer/user has unsubscribed from such services. Uploading a profile
-        photo is optional and CholoZai doesn't use or share it for any purpose.
+        photo is optional and ColoZai doesn't use or share it for any purpose.
       </p>
       <br />
       <p>
         If you choose not to share this information, you can still visit the
-        CholoZai website, but you may be unable to access certain options,
-        offers and services. CholoZai takes appropriate steps to protect the
-        information you share with us. We have implemented technology and
-        security features and strict policy guidelines to safeguard the privacy
-        of your personally identifiable information from unauthorized access and
-        improper use or disclosure. Please contact us on
-        <a href="mailto:info@cholozazi.com">info@CholoZai.com</a>
+        ColoZai website, but you may be unable to access certain options, offers
+        and services. ColoZai takes appropriate steps to protect the information
+        you share with us. We have implemented technology and security features
+        and strict policy guidelines to safeguard the privacy of your personally
+        identifiable information from unauthorized access and improper use or
+        disclosure. Please contact us on
+        <a href="mailto:info@colozazi.com">info@ColoZai.com</a>
         to obtain names and addresses of the specific entities that shall have
         access to your personal information in a given transaction.
       </p>
       <br />
       <p>
-        CholoZai will continue to enhance its security procedures as new
+        ColoZai will continue to enhance its security procedures as new
         technology becomes available, and ensures that its security procedures
         are compliant with current applicable regulations. If our privacy policy
         changes in the future, it will be posted here and a new effective date
@@ -91,7 +91,7 @@
       </p>
       <div class="pt-10">
         <p class="my-4">
-          At <strong>https://www.cholozai.com</strong>, we are committed to
+          At <strong>https://www.colozai.com</strong>, we are committed to
           protecting and respecting your privacy. This Privacy Policy explains
           how we collect, use, and protect your personal information when you
           visit our website.
@@ -99,7 +99,7 @@
 
         <h2 class="text-2xl font-semibold mt-6 mb-4">Information We Collect</h2>
         <p class="my-4">
-          When you visit <strong>https://www.cholozai.com</strong>, we may
+          When you visit <strong>https://www.colozai.com</strong>, we may
           collect the following types of personal information:
         </p>
         <ul class="list-disc list-inside ml-4">
@@ -141,7 +141,7 @@
 
         <h2 class="text-2xl font-semibold mt-6 mb-4">Cookies</h2>
         <p class="my-4">
-          <strong>https://www.cholozai.com</strong> uses cookies to enhance your
+          <strong>https://www.colozai.com</strong> uses cookies to enhance your
           browsing experience. Cookies are small data files that are placed on
           your device when you visit our website. You can choose to disable
           cookies in your browser settings, but this may limit some
@@ -169,10 +169,8 @@
           You have the right to access, update, or delete your personal
           information. If you wish to exercise these rights, please contact us
           at
-          <a
-            href="mailto:support@cholozai.com"
-            class="text-indigo-500 underline"
-            >support@cholozai.com</a
+          <a href="mailto:support@colozai.com" class="text-indigo-500 underline"
+            >support@colozai.com</a
           >.
         </p>
 
@@ -197,10 +195,8 @@
         <p class="my-4">
           If you have any questions or concerns regarding this Privacy Policy,
           please contact us at
-          <a
-            href="mailto:support@cholozai.com"
-            class="text-indigo-500 underline"
-            >support@cholozai.com</a
+          <a href="mailto:support@colozai.com" class="text-indigo-500 underline"
+            >support@colozai.com</a
           >.
         </p>
       </div>
@@ -217,7 +213,7 @@ export default {
   head() {
     const title = `Privacy Policy - ${this.$pageTitle}`;
     const description =
-      "Read the Privacy Policy of Cholozai, your trusted travel guide. Learn how we collect, use, and protect your personal information while you explore travel destinations.";
+      "Read the Privacy Policy of ColoZai, your trusted travel guide. Learn how we collect, use, and protect your personal information while you explore travel destinations.";
     return {
       title,
       meta: meta({ title, description }),

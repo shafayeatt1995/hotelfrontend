@@ -32,7 +32,7 @@
             </span>
           </h1>
           <h2 class="md:text-xl text-sm text-white font-semibold md:mt-8 mt-4">
-            With CholoZai, find premium accommodations at affordable prices.
+            With ColoZai, find premium accommodations at affordable prices.
             Enjoy an exceptional stay without compromising on quality. Discover
             luxury within your budget.
           </h2>

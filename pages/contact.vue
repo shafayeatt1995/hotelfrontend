@@ -8,7 +8,7 @@
       <p class="my-4">
         We would love to hear from you! Whether you have questions, feedback, or
         inquiries about travel destinations, feel free to reach out to us. Our
-        team at <strong>https://www.cholozai.com</strong> is here to assist you.
+        team at <strong>https://www.colozai.com</strong> is here to assist you.
       </p>
 
       <form
@@ -67,8 +67,8 @@
 
       <p class="text-gray-600 dark:text-white mt-8">
         Alternatively, you can reach us at
-        <a href="mailto:support@cholozai.com" class="text-indigo-500 underline"
-          >support@cholozai.com</a
+        <a href="mailto:support@colozai.com" class="text-indigo-500 underline"
+          >support@colozai.com</a
         >.
       </p>
     </div>
@@ -83,7 +83,7 @@ export default {
   head() {
     const title = `Contact Us - ${this.$pageTitle}`;
     const description =
-      "Have questions or need help? Contact Cholozai, your trusted travel guide. We're here to assist with any inquiries about travel destinations or our services.";
+      "Have questions or need help? Contact ColoZai, your trusted travel guide. We're here to assist with any inquiries about travel destinations or our services.";
     return {
       title,
       meta: meta({ title, description }),

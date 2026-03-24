@@ -5,9 +5,9 @@
       <div>
         <p>
           Please carefully read the terms and conditions before using any of the
-          services provided by CholoZai. By using any materials, information,
-          products or services of CholoZai, you agree to these terms and
-          conditions. CholoZai holds the right to change or modify these terms
+          services provided by ColoZai. By using any materials, information,
+          products or services of ColoZai, you agree to these terms and
+          conditions. ColoZai holds the right to change or modify these terms
           and conditions at any time for any reason, without prior notice. Your
           continued use of the website and its services means you have accepted
           the modified terms and conditions. Please review the terms
@@ -20,7 +20,7 @@
         <h2 class="mt-6 text-4xl font-semibold">General Disclaimer</h2>
         <div>
           <p>
-            CholoZai does not own any hotel and travel products. We are simply
+            ColoZai does not own any hotel and travel products. We are simply
             the bridge which connects the travelers with the travel service
             providers like hotels, tour operators etc. The accuracy,
             completeness, and correctness of the inventory-related information
@@ -31,22 +31,22 @@
           </p>
           <p>
             If something should go wrong during booking or travel period,
-            CholoZai will act as a point of contact and will use its
-            commercially reasonable efforts to assist the customer. CholoZai
-            will always follow the standard policies of travel providers Hotel.
+            ColoZai will act as a point of contact and will use its commercially
+            reasonable efforts to assist the customer. ColoZai will always
+            follow the standard policies of travel providers Hotel.
           </p>
         </div>
         <div>
           <p class="my-4">
             By accessing this website, we assume you accept these terms and
             conditions. Do not continue to use
-            <strong>https://www.cholozai.com</strong> if you do not agree to all
+            <strong>https://www.colozai.com</strong> if you do not agree to all
             the terms and conditions stated on this page.
           </p>
 
           <h2 class="mt-6 text-4xl font-semibold">General Information</h2>
           <p class="my-4">
-            <strong>https://www.cholozai.com</strong> provides users with
+            <strong>https://www.colozai.com</strong> provides users with
             information, guides, and tips about travel destinations. The
             information on this site is for general information purposes only
             and is subject to change without notice.
@@ -56,7 +56,7 @@
           <p class="my-4">
             All content published on this website, including but not limited to
             text, images, logos, and design, is the intellectual property of
-            <strong>https://www.cholozai.com</strong> unless otherwise stated.
+            <strong>https://www.colozai.com</strong> unless otherwise stated.
             Unauthorized use or reproduction of this content is prohibited.
           </p>
 
@@ -87,14 +87,14 @@
           <p class="my-4">
             Our website may contain links to third-party websites or services
             that are not owned or controlled by
-            <strong>https://www.cholozai.com</strong>. We have no control over,
+            <strong>https://www.colozai.com</strong>. We have no control over,
             and assume no responsibility for, the content, privacy policies, or
             practices of any third-party sites or services.
           </p>
 
           <h2 class="mt-6 text-4xl font-semibold">Limitation of Liability</h2>
           <p class="my-4">
-            <strong>https://www.cholozai.com</strong> will not be held
+            <strong>https://www.colozai.com</strong> will not be held
             responsible or liable for any damages arising out of your use of the
             website, including but not limited to indirect, incidental, or
             consequential damages.
@@ -119,7 +119,7 @@
           <p class="my-4">
             Users may be allowed to submit comments, reviews, or other content
             on the website. By submitting content, you grant
-            <strong>https://www.cholozai.com</strong> a non-exclusive,
+            <strong>https://www.colozai.com</strong> a non-exclusive,
             royalty-free, perpetual, and worldwide license to use, reproduce,
             and distribute your content. You are responsible for ensuring that
             any content you submit complies with applicable laws and does not
@@ -155,9 +155,9 @@
             If you have any questions or concerns about these Terms and
             Conditions, please contact us at
             <a
-              href="mailto:support@cholozai.com"
+              href="mailto:support@colozai.com"
               class="text-indigo-500 underline"
-              >support@cholozai.com</a
+              >support@colozai.com</a
             >.
           </p>
         </div>
@@ -169,8 +169,8 @@
             and our website only acts as a user interface. Travelers must
             understand and agree to the terms and conditions of the travel
             providers Hotels. before booking or purchasing their products
-            through CholoZai. If any traveler faces any issue or dispute
-            regarding any of the bookings, CholoZai will act as a point of
+            through ColoZai. If any traveler faces any issue or dispute
+            regarding any of the bookings, ColoZai will act as a point of
             contact and will use its commercially reasonable efforts to assist
             the customer.
           </p>
@@ -181,21 +181,21 @@
         <h2 class="mt-6 text-4xl font-semibold">Promotion Terms</h2>
         <div>
           <p>
-            CholoZai generates promotion codes/discounts from time to time which
+            ColoZai generates promotion codes/discounts from time to time which
             may be availed on the site
           </p>
           <p>
-            CholoZai reserves the right to add, alter, modify, withdraw all or
+            ColoZai reserves the right to add, alter, modify, withdraw all or
             any of the Terms and Conditions or replace, wholly or in part, the
             program by any other program, whether similar to this program or not
             or withdraw it altogether without any prior notice.
           </p>
           <p>
-            In case of dispute with any party, CholoZai's decision will be
+            In case of dispute with any party, ColoZai's decision will be
             binding and final.
           </p>
           <p>
-            When you register with CholoZai.com, we or any of our
+            When you register with ColoZai.com, we or any of our
             partners/affiliate/group companies may contact you from time to time
             to provide the offers/information of such products/services that we
             believe may benefit you.
@@ -213,22 +213,21 @@
             for any other purposes except to verify and confirm your identity.
           </p>
           <p>
-            The Convenience Charge is charged by CholoZai and it may change
-            based on payment method.
+            The Convenience Charge is charged by ColoZai and it may change based
+            on payment method.
           </p>
         </div>
         <h2 class="mt-6 text-4xl font-semibold">Cancellation & Refund</h2>
         <div>
           <p>
-            CholoZai will follow supplier's (Hotel/Tour operator etc.) policy
-            for cancellation/ re-issue.
+            ColoZai will follow supplier's (Hotel/Tour operator etc.) policy for
+            cancellation/ re-issue.
           </p>
           <p>
-            For hotel/ tour, CholoZai will not charge any additional service
-            fee.
+            For hotel/ tour, ColoZai will not charge any additional service fee.
           </p>
           <p>
-            In case of refund/ re-issue, customer must confirm CholoZai 48 hours
+            In case of refund/ re-issue, customer must confirm ColoZai 48 hours
             prior to travel date.
           </p>
           <p>
@@ -257,7 +256,7 @@
       </div>
       <div class="text-block">
         <div>
-          <p>This website is owned and operated by CholoZai.</p>
+          <p>This website is owned and operated by ColoZai.</p>
         </div>
       </div>
     </div>
@@ -273,7 +272,7 @@ export default {
   head() {
     const title = `Terms and Conditions - ${this.$pageTitle}`;
     const description =
-      "Review the Terms and Conditions of using Cholozai. By accessing our travel guide, you agree to our terms for using the website, booking information, and services.";
+      "Review the Terms and Conditions of using ColoZai. By accessing our travel guide, you agree to our terms for using the website, booking information, and services.";
     return {
       title,
       meta: meta({ title, description }),

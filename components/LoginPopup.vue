@@ -13,7 +13,7 @@
     <template #body>
       <div>
         <h2 class="font-kaushan text-2xl text-indigo-900 dark:text-white">
-          CholoZai
+          ColoZai
         </h2>
         <h1 class="text-4xl font-bold mt-4 text-gray-800 dark:text-white">
           Hello there, Welcome!

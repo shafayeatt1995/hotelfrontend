@@ -7,7 +7,7 @@
           <h2 class="mt-6 text-4xl font-semibold">Hotel</h2>
           <div>
             <ul class="list">
-              <li>CholoZai follows property's cancellation policy.</li>
+              <li>ColoZai follows property's cancellation policy.</li>
               <li>
                 Cancellation fee may apply depending on the property and the
                 time of cancellation.
@@ -21,7 +21,7 @@
                 Booking for black-out dates are not cancellable or refundable.
               </li>
               <li>
-                CholoZai won't charge any additional service charges apart from
+                ColoZai won't charge any additional service charges apart from
                 the hotel quoted fees.
               </li>
               <li>
@@ -41,14 +41,14 @@
           <h2 class="mt-6 text-4xl font-semibold">Tour</h2>
           <div>
             <ul class="list">
-              <li>CholoZai follows tour operator's cancellation policy.</li>
+              <li>ColoZai follows tour operator's cancellation policy.</li>
               <li>
                 To cancel or date change, travelers are advised to email at
                 <a
-                  href="mailto:tours@cholozai.com"
+                  href="mailto:tours@colozai.com"
                   target="_blank"
                   class="text-indigo-600"
-                  >tours@cholozai.com</a
+                  >tours@colozai.com</a
                 >. The team will respond accordingly to resolve the issue.
               </li>
               <li>
@@ -58,7 +58,7 @@
                 Booking for black-out dates are not cancellable or refundable.
               </li>
               <li>
-                CholoZai won't charge any additional service charge apart from
+                ColoZai won't charge any additional service charge apart from
                 the operator's quoted fees.
               </li>
               <li>
@@ -88,7 +88,7 @@ export default {
   head() {
     const title = `Refund policy - ${this.$pageTitle}`;
     const description =
-      "Read Cholozai.com's refund policy to understand our guidelines on cancellations, refunds, and changes to bookings. We prioritize customer satisfaction and provide clear instructions on how to request refunds for hotel reservations.";
+      "Read ColoZai.com's refund policy to understand our guidelines on cancellations, refunds, and changes to bookings. We prioritize customer satisfaction and provide clear instructions on how to request refunds for hotel reservations.";
     return {
       title,
       meta: meta({ title, description }),

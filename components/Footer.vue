@@ -7,12 +7,12 @@
         <div>
           <nuxt-link :to="{ name: 'index' }" class="font-kaushan text-4xl flex">
             <img src="/images/white-logo.svg" alt="logo" class="h-10" />
-            CholoZai
+            ColoZai
           </nuxt-link>
           <p class="leading-5 mt-3 text-sm">
-            CholoZai is an easier hotel booking platform in Bangladesh, We are
+            ColoZai is an easier hotel booking platform in Bangladesh, We are
             trying to making travel simple and accessible for everyone. Choose
-            CholoZai for a hassle free hotel booking experience.
+            ColoZai for a hassle free hotel booking experience.
           </p>
         </div>
         <div>
@@ -41,8 +41,8 @@
             class="grid grid-cols-2 lg:grid-cols-1 gap-2 text-sm md:text-base items-center"
           >
             <div class="flex">
-              <a href="mailto:info@cholozai.com"
-                ><i class="fa-solid fa-at"></i> info@cholozai.com</a
+              <a href="mailto:info@colozai.com"
+                ><i class="fa-solid fa-at"></i> info@colozai.com</a
               >
             </div>
             <div class="flex">

@@ -28,7 +28,7 @@
             Best Holidays Start at
             <span
               class="font-kaushan text-indigo-900 dark:text-indigo-500 block md:inline-block"
-              >Cholozai!</span
+              >ColoZai!</span
             >
           </h2>
           <h3

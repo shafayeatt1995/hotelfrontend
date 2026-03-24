@@ -6,7 +6,7 @@
       >
         Top Destinations at
         <span class="font-kaushan text-indigo-900 dark:text-indigo-500">
-          Cholozai
+          ColoZai
         </span>
       </h3>
 

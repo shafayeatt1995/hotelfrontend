@@ -9,7 +9,7 @@ export default {
 
   head: {
     htmlAttrs: { lang: "en" },
-    title: process.env.APP_NAME || "CholoZai",
+    title: process.env.APP_NAME || "ColoZai",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -22,8 +22,8 @@ export default {
         property: "og:image",
         content: `${process.env.BASE_URL}/og-image.webp`,
       },
-      { property: "og:site_name", content: `Cholozai` },
-      { property: "og:url", content: `https://www.cholozai.com` },
+      { property: "og:site_name", content: `ColoZai` },
+      { property: "og:url", content: `https://www.colozai.com` },
       { property: "og:type", content: `website` },
       {
         name: "twitter:image",
@@ -84,6 +84,7 @@ export default {
 
   plugins: [
     "@/plugins/global-variable.js",
+    "@/plugins/canonical.js",
     "@/plugins/api.js",
     "@/plugins/filter.js",
     "@/plugins/slide.js",
@@ -131,7 +132,7 @@ export default {
   },
 
   sitemap: {
-    hostname: "https://www.cholozai.com",
+    hostname: process.env.CANONICAL_ORIGIN || "https://colozai.com",
     path: "/sitemap.xml",
     gzip: true,
     exclude: ["/dashboard/**"],

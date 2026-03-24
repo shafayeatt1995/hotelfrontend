@@ -8,8 +8,8 @@
           loading="lazy"
           decoding="async"
           src="/hero-background.webp"
-          alt="Hero background image Cholozai.com"
-          title="Hero background image Cholozai.com"
+          alt="Hero background image ColoZai.com"
+          title="Hero background image ColoZai.com"
           class="object-cover inset-0 w-full h-full"
           format="webp"
           quality="50"
@@ -28,7 +28,7 @@
               class="font-black lg:text-5xl 2xl:text-7xl md:text-4xl text-2xl text-white mt-5 relative"
             >
               Discover Every Destination in Bangladesh. A Complete Travel Guide
-              <span class="font-bold">Cholozai.com</span>
+              <span class="font-bold">ColoZai.com</span>
             </h1>
             <p
               class="lg:text-xl text-sm text-white font-semibold md:mt-8 mt-4 px-2"

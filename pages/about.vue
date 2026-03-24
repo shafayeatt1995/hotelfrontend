@@ -6,15 +6,15 @@
           <h1
             class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4"
           >
-            About Us - Cholozai.com: Your Ultimate Guide to Traveling Bangladesh
+            About Us - ColoZai.com: Your Ultimate Guide to Traveling Bangladesh
           </h1>
           <p
             class="font-normal text-base leading-6 text-gray-600 dark:text-white"
           >
-            Welcome to Cholozai.com! We're thrilled to have you here, and we'd
+            Welcome to ColoZai.com! We're thrilled to have you here, and we'd
             love to tell you a bit about who we are, what we do, and how we can
             help make your travels in Bangladesh unforgettable. Whether you're a
-            seasoned traveler or planning your first adventure, Cholozai.com is
+            seasoned traveler or planning your first adventure, ColoZai.com is
             your go-to destination for all things related to Bangladesh tourism.
           </p>
         </div>
@@ -24,8 +24,8 @@
             decoding="async"
             class="w-auto max-h-[500px]"
             src="/images/about.svg"
-            alt="cholozai"
-            title="cholozai"
+            alt="colozai"
+            title="colozai"
             format="webp"
             height="500"
           />
@@ -61,7 +61,7 @@ export default {
   head() {
     const title = `About us | ${this.$pageTitle}`;
     const description =
-      "Welcome to Cholozai.com! We're thrilled to have you here, and we'd love to tell you a bit about who we are, what we do, and how we can help make your travels in Bangladesh unforgettable.";
+      "Welcome to ColoZai.com! We're thrilled to have you here, and we'd love to tell you a bit about who we are, what we do, and how we can help make your travels in Bangladesh unforgettable.";
     return {
       title,
       meta: meta({ title, description }),
@@ -72,7 +72,7 @@ export default {
       contents: [
         {
           title: `Our Mission`,
-          body: `At Cholozai.com, our mission is simple: to showcase the beauty, culture, and diversity of Bangladesh. We believe that Bangladesh is a hidden gem with countless wonders waiting to be discovered, and we are passionate about helping both locals and international travelers explore everything this incredible country has to offer.`,
+          body: `At ColoZai.com, our mission is simple: to showcase the beauty, culture, and diversity of Bangladesh. We believe that Bangladesh is a hidden gem with countless wonders waiting to be discovered, and we are passionate about helping both locals and international travelers explore everything this incredible country has to offer.`,
         },
         {
           title: `Who We Are`,
@@ -80,7 +80,7 @@ export default {
         },
         {
           title: `What We Do`,
-          body: `Cholozai.com is a travel dedicated to providing detailed information on Bangladesh's top tourist destinations, hidden gems, cultural festivals, and local cuisine. We cover everything from practical travel tips to in-depth guides on must-see places. Our content is carefully crafted to ensure that you have all the information you need to make the most of your trip to Bangladesh.`,
+          body: `ColoZai.com is a travel dedicated to providing detailed information on Bangladesh's top tourist destinations, hidden gems, cultural festivals, and local cuisine. We cover everything from practical travel tips to in-depth guides on must-see places. Our content is carefully crafted to ensure that you have all the information you need to make the most of your trip to Bangladesh.`,
           subs: [
             {
               title: `Comprehensive Travel Guides`,
@@ -114,7 +114,7 @@ export default {
             },
             {
               title: `Commitment`,
-              body: `At Cholozai.com, we are committed to providing high-quality, accurate, and up-to-date information. We understand that travel plans can change, and we strive to keep our content relevant and helpful.`,
+              body: `At ColoZai.com, we are committed to providing high-quality, accurate, and up-to-date information. We understand that travel plans can change, and we strive to keep our content relevant and helpful.`,
             },
           ],
         },

@@ -42,7 +42,7 @@
           >
             <nuxt-link
               :to="{ name: 'index' }"
-              title="cholozai"
+              title="colozai"
               class="px-3 py-2 text-sm font-medium dark:text-white text-indigo-900 hover:text-indigo-700"
               >Home</nuxt-link
             >

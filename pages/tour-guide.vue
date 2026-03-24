@@ -47,7 +47,7 @@ export default {
   head() {
     const title = `Ultimate Tour Guide - ${this.$pageTitle}`;
     const description =
-      "Discover top travel destinations, tips, and guides at Cholozai. Plan your next adventure with expert insights and comprehensive travel information for any location.";
+      "Discover top travel destinations, tips, and guides at ColoZai. Plan your next adventure with expert insights and comprehensive travel information for any location.";
     return {
       title,
       meta: meta({ title, description }),

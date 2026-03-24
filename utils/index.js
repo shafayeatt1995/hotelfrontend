@@ -38,8 +38,8 @@ export function validateDate(date, defaultDate) {
   return !isNaN(Date.parse(date))
     ? new Date(date)
     : !isNaN(Date.parse(defaultDate))
-    ? new Date(defaultDate)
-    : new Date();
+      ? new Date(defaultDate)
+      : new Date();
 }
 
 export function strSlug(val = "") {
@@ -201,8 +201,8 @@ export function fullDateFormat(date = new Date()) {
 }
 
 export function meta({
-  title = "CholoZai - Your Ultimate Guide to Travel in Bangladesh",
-  description = "Discover the beauty of Bangladesh with CholoZai. Explore top destinations, hidden gems, cultural experiences, and travel tips for an unforgettable journey through this vibrant country.",
+  title = "ColoZai - Your Ultimate Guide to Travel in Bangladesh",
+  description = "Discover the beauty of Bangladesh with ColoZai. Explore top destinations, hidden gems, cultural experiences, and travel tips for an unforgettable journey through this vibrant country.",
 } = {}) {
   return [
     { name: "description", content: description },

@@ -1,6 +1,6 @@
 export const state = () => ({
   baseUrl: process.env.BASE_URL,
-  apiUrl: process.env.API_URL || "https://api.cholozai.com",
+  apiUrl: process.env.API_URL || "https://api.colozai.com",
   windowWidth: 0,
   loadLocations: false,
   locations: [],
@@ -139,7 +139,7 @@ export const getters = {
   baseUrl: (state) => state.baseUrl,
   apiUrl: (state) => state.apiUrl,
   urlApi: (state) => `${state.apiUrl}/api`,
-  pageTitle: () => process.env.APP_NAME || "CholoZai",
+  pageTitle: () => process.env.APP_NAME || "ColoZai",
   windowWidth: (state) => state.windowWidth,
   superAdmin: (state) =>
     (state.auth?.user?.isSuperAdmin && state.auth?.user?.type === "admin") ||

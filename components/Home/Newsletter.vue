@@ -14,14 +14,14 @@
             <p>
               Discount at
               <span class="font-kaushan text-indigo-900 dark:text-indigo-500"
-                >Cholozai!</span
+                >ColoZai!</span
               >
             </p>
           </h1>
           <p
             class="text-center text-gray-700 md:mt-4 my-1 lg:px-0 md:px-32 dark:text-white"
           >
-            Join Cholozai mailing list today to receive exclusive offers,
+            Join ColoZai mailing list today to receive exclusive offers,
             discounts, updates & our latest deals!
           </p>
           <div class="flex justify-center md:mt-16 mt-8 mb-8 w-full">

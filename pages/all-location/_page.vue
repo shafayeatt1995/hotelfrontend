@@ -35,7 +35,7 @@ export default {
   auth: false,
   head() {
     const title = `Location - Page ${this.page} | ${this.$pageTitle}`;
-    const description = `Explore a diverse range of travel information on CholoZai. From travel tips and destination guides to cultural insights. page number ${this.page}.`;
+    const description = `Explore a diverse range of travel information on ColoZai. From travel tips and destination guides to cultural insights. page number ${this.page}.`;
 
     return {
       title,

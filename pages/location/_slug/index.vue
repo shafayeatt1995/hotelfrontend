@@ -248,7 +248,7 @@ export default {
     const title = `${this.post.title} | ${this.$pageTitle}`;
     const description =
       `${this.post?.content[0]?.content[0]?.slice(0, 150)}...` ||
-      "Discover the beauty of Bangladesh with CholoZai. Explore top destinations, hidden gems, cultural experiences, and travel tips for an unforgettable journey through this vibrant country.";
+      "Discover the beauty of Bangladesh with ColoZai. Explore top destinations, hidden gems, cultural experiences, and travel tips for an unforgettable journey through this vibrant country.";
     const mainEntity = this.post.content
       .filter(({ title }) => title && title.length)
       .map(({ title, content }) => ({
