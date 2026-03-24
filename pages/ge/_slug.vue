@@ -41,6 +41,10 @@ export default {
 
 <style>
 #content h2 {
-  @apply text-3xl font-bold mt-4 text-gray-800 dark:text-white;
+  @apply text-3xl font-bold mt-4 text-gray-800;
+}
+
+.dark #content h2 {
+  @apply text-white;
 }
 </style>

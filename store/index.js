@@ -1,6 +1,3 @@
-require("dotenv").config();
-import axios from "axios";
-
 export const state = () => ({
   baseUrl: process.env.BASE_URL,
   apiUrl: process.env.API_URL || "https://api.cholozai.com",
