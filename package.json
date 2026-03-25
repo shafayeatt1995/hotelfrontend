@@ -7,7 +7,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "index-now": "node scripts/index-now.js"
   },
   "dependencies": {
     "@nuxt/image": "^0.7.2",
